@@ -54,7 +54,6 @@ class AssistantViewModel @Inject constructor(
     private val networkStatusMonitor: NetworkStatusMonitor
 ) : ViewModel() {
 
-    // Lazy initialization of Firebase AI Logic model as mandated by guidelines
     private val _messages = MutableStateFlow<List<AssistantChatMessage>>(emptyList())
     private val _inputDraft = MutableStateFlow("")
     private val _uiStatus = MutableStateFlow<AssistantUiStatus>(AssistantUiStatus.Idle)
