@@ -5,8 +5,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ahmesh.app.domain.model.P2PConnectionStatus
 import com.ahmesh.app.domain.repository.NetworkStatusMonitor
-import com.google.firebase.Firebase
-import com.google.firebase.ai.ai
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.TimeoutCancellationException
@@ -57,10 +55,6 @@ class AssistantViewModel @Inject constructor(
 ) : ViewModel() {
 
     // Lazy initialization of Firebase AI Logic model as mandated by guidelines
-    private val generativeModel by lazy {
-        Firebase.ai.generativeModel("gemini-3.8-flash")
-    }
-
     private val _messages = MutableStateFlow<List<AssistantChatMessage>>(emptyList())
     private val _inputDraft = MutableStateFlow("")
     private val _uiStatus = MutableStateFlow<AssistantUiStatus>(AssistantUiStatus.Idle)
