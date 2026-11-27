@@ -85,6 +85,8 @@ dependencies {
 
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.camera.core)
+    implementation(libs.zxing.android.embedded)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.security.crypto)
 	implementation(libs.androidx.core.ktx)
