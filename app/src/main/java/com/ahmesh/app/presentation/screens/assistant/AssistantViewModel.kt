@@ -73,10 +73,16 @@ class AssistantViewModel @Inject constructor(
     }.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5_000),
-        initialValue = AssistantUiState(networkStatus = networkStatusMonitor.status.value)
+        initialValue = AssistantUiState(
+            networkStatus = networkStatusMonitor.status.value
+        )
     )
 
-    fun onInputDraftChange(text: String) {
+    val messages: StateFlow<List<AssistantChatMessage>> = _messages.asStateFlow()
+    val inputDraft: StateFlow<String> = _inputDraft.asStateFlow()
+    val uiStatus: StateFlow<AssistantUiStatus> = _uiStatus.asStateFlow()
+
+    fun updateDraft(text: String) {
         _inputDraft.value = text
     }
 
@@ -107,40 +113,35 @@ class AssistantViewModel @Inject constructor(
 
         viewModelScope.launch {
             val net = networkStatusMonitor.status.value
-            val systemContext = buildString {
-                appendLine("You are AH Mesh Assistant, an expert AI specialized in serverless, offline peer-to-peer (P2P) mesh networking for the AH Mesh Android application.")
-                appendLine("Current live device P2P network diagnostics:")
-                appendLine("- P2P State: ${net.state}")
-                appendLine("- Transport Mode: ${net.transportMode}")
-                appendLine("- Wi-Fi Radio Enabled: ${net.isWifiEnabled}")
-                appendLine("- Wi-Fi Direct Hardware Supported: ${net.isWifiDirectSupported}")
-                appendLine("- Nearby Devices System Permission: ${net.hasNearbyPermission}")
-                appendLine("- Actively Discovering Peered Nodes: ${net.isDiscovering}")
-                appendLine("- Connected Mesh Peers: ${net.connectedPeersCount}")
-                appendLine("- Discovered Nearby Nodes: ${net.discoveredPeersCount}")
-                appendLine()
-                appendLine("Provide accurate, technical yet clear troubleshooting guidance, explain how Wi-Fi Direct and Local LAN work offline, and assist with cryptographic QR handshake pairing or security locks.")
-                appendLine()
-                appendLine("User Question:")
-                append(trimmed)
-            }
-
             val accumulatedContent = StringBuilder()
-            try {
-                // Realistic 60s coroutine timeout window as mandated by Firebase AI Logic guide
-                withTimeout(60_000L) {
-                    generativeModel.generateContentStream(systemContext).collect { responseChunk ->
-                        val chunkText = responseChunk.text.orEmpty()
-                        accumulatedContent.append(chunkText)
-                        val currentText = accumulatedContent.toString()
 
-                        _messages.update { list ->
-                            list.map { msg ->
-                                if (msg.id == assistantMessageId) {
-                                    msg.copy(content = currentText, isStreaming = true)
-                                } else {
-                                    msg
-                                }
+            try {
+                withTimeout(60_000L) {
+                    val offlineReply = buildString {
+                        appendLine("AH Mesh অফলাইন অ্যাসিস্ট্যান্ট চালু আছে (সার্ভার বা ইন্টারনেট ছাড়াই)।")
+                        appendLine()
+                        appendLine("বর্তমান ডিভাইস নেটওয়ার্ক অবস্থা:")
+                        appendLine("- P2P State: ${net.state}")
+                        appendLine("- Transport Mode: ${net.transportMode}")
+                        appendLine("- Wi-Fi Enabled: ${net.isWifiEnabled}")
+                        appendLine("- Wi-Fi Direct Supported: ${net.isWifiDirectSupported}")
+                        appendLine("- Nearby Permission: ${net.hasNearbyPermission}")
+                        appendLine("- Discovering Peers: ${net.isDiscovering}")
+                        appendLine("- Connected Peers: ${net.connectedPeersCount}")
+                        appendLine("- Discovered Nodes: ${net.discoveredPeersCount}")
+                        appendLine()
+                        append("প্রশ্ন: $trimmed — অফলাইন P2P কানেকশনের জন্য Wi-Fi Direct, Bluetooth বা Local Hotspot চালু রেখে কাছাকাছি ডিভাইস স্ক্যান বা QR পেয়ারিং ব্যবহার করুন।")
+                    }
+
+                    accumulatedContent.append(offlineReply)
+                    val currentText = accumulatedContent.toString()
+
+                    _messages.update { list ->
+                        list.map { msg ->
+                            if (msg.id == assistantMessageId) {
+                                msg.copy(content = currentText, isStreaming = true)
+                            } else {
+                                msg
                             }
                         }
                     }
@@ -157,36 +158,17 @@ class AssistantViewModel @Inject constructor(
                             }
                         }
                     }
-                    _uiStatus.value = AssistantUiStatus.Idle
-                } else {
-                    val emptyError = "Model returned an empty response. Please try rephrasing."
-                    markAssistantMessageError(assistantMessageId, emptyError)
-                    _uiStatus.value = AssistantUiStatus.Error(emptyError)
                 }
-            } catch (e: TimeoutCancellationException) {
-                Log.e(TAG, "Assistant generation timed out", e)
-                val timeoutError = "Generation timed out after 60 seconds. Please check connectivity and try again."
-                markAssistantMessageError(assistantMessageId, timeoutError)
-                _uiStatus.value = AssistantUiStatus.Error(timeoutError)
-            } catch (e: CancellationException) {
-                // Re-throw to allow cooperative coroutine cancellation
-                throw e
+            } catch (_: CancellationException) {
+                throw CancellationException()
+            } catch (_: TimeoutCancellationException) {
+                _uiStatus.value = AssistantUiStatus.Error("রেসপন্স তৈরি করতে বেশি সময় লেগেছে।")
             } catch (e: Exception) {
-                Log.e(TAG, "Assistant generation failed", e)
-                val failureMessage = e.localizedMessage ?: "Failed to generate AI response."
-                markAssistantMessageError(assistantMessageId, failureMessage)
-                _uiStatus.value = AssistantUiStatus.Error(failureMessage)
-            }
-        }
-    }
-
-    private fun markAssistantMessageError(id: String, errorMessage: String) {
-        _messages.update { list ->
-            list.map { msg ->
-                if (msg.id == id) {
-                    msg.copy(content = errorMessage, isStreaming = false, isError = true)
-                } else {
-                    msg
+                Log.e(TAG, "Offline assistant error", e)
+                _uiStatus.value = AssistantUiStatus.Error(e.message ?: "অজানা ত্রুটি ঘটেছে।")
+            } finally {
+                if (_uiStatus.value is AssistantUiStatus.Generating) {
+                    _uiStatus.value = AssistantUiStatus.Idle
                 }
             }
         }
