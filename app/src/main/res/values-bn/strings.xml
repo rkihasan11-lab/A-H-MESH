@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AH Mesh</string>
+    <string name="main_screen_title">AH Mesh</string>
+    <string name="main_placeholder_title">লাইভ মেশ মনিটর</string>
+    <string name="main_placeholder_subtitle">অফলাইনে ফাইল ও APK আদান-প্রদানের জন্য QR পেয়ার করুন, কাছাকাছি Wi-Fi Direct খুঁজুন অথবা ট্রান্সফার হাব খুলুন।</string>
+
+    <string name="brand_tagline">SECURE  |  P2P  |  OFFLINE</string>
+    <string name="brand_banner_desc">সার্ভারবিহীন অফলাইন মেশ যোগাযোগ ও হার্ডওয়্যার-ভিত্তিক নিরাপত্তা লক।</string>
+    <string name="brand_about_button">তথ্য</string>
+    <string name="brand_about_title">AH Mesh সম্পর্কে</string>
+    <string name="brand_about_body">AH Mesh কোনো ক্লাউড সার্ভার ছাড়াই Wi-Fi Direct এবং লোকাল LAN-এর মাধ্যমে সরাসরি P2P সংযোগ তৈরি করে। বায়োমেট্রিক আনলক, লোকাল অ্যাপ পিন এবং ডিভাইস লক দিয়ে আপনার সেশন সুরক্ষিত রাখুন।</string>
+    <string name="brand_about_close">বন্ধ করুন</string>
+    <string name="cd_ah_mesh_logo">AH Mesh লোগো</string>
+
+    <string name="network_card_header">P2P মেশ লিংক</string>
+    <string name="network_status_connected">সংযুক্ত</string>
+    <string name="network_status_discovering">কাছাকাছি খোঁজা হচ্ছে</string>
+    <string name="network_status_ready">P2P প্রস্তুত</string>
+    <string name="network_status_permission">অনুমতি প্রয়োজন</string>
+    <string name="network_status_offline">অফলাইন</string>
+
+    <string name="network_desc_connected">%1$d টি পিয়ারের সাথে সরাসরি মেশ সংযোগ সক্রিয় রয়েছে।</string>
+    <string name="network_desc_discovering">Wi-Fi Direct ব্যবহার করে কাছাকাছি AH Mesh নোড খোঁজা হচ্ছে।</string>
+    <string name="network_desc_ready">লোকাল রেডিও প্রস্তুত। কাছাকাছি পিয়ার খুঁজতে ডিসকভারি শুরু করুন।</string>
+    <string name="network_desc_permission">Wi-Fi Direct পিয়ার ডিসকভারি চালু করতে কাছাকাছি ডিভাইসের অনুমতি দিন।</string>
+    <string name="network_desc_offline">অফলাইন P2P মেশ লিংক চালু করতে Wi-Fi সক্রিয় করুন।</string>
+
+    <string name="network_metric_peers">পিয়ার</string>
+    <string name="network_metric_transport">ট্রান্সপোর্ট</string>
+    <string name="network_metric_wifi">Wi-Fi রেডিও</string>
+    <string name="network_wifi_on">সক্রিয়</string>
+    <string name="network_wifi_off">বন্ধ</string>
+    <string name="network_transport_wifi_direct">Wi-Fi Direct</string>
+    <string name="network_transport_local_mesh">লোকাল LAN</string>
+    <string name="network_transport_unavailable">স্ট্যান্ডবাই</string>
+
+    <string name="network_action_start_scan">ডিসকভারি শুরু</string>
+    <string name="network_action_stop_scan">ডিসকভারি থামান</string>
+    <string name="network_action_grant_permission">অনুমতি দিন</string>
+    <string name="network_action_refresh">রিফ্রেশ করুন</string>
+    <string name="network_cd_refresh">নেটওয়ার্ক স্ট্যাটাস রিফ্রেশ করুন</string>
+    <string name="network_cd_indicator">P2P সংযোগ স্ট্যাটাস নির্দেশক: %1$s</string>
+    <string name="cd_language_toggle">ভাষা পরিবর্তন করুন</string>
+    <string name="cd_security_settings">নিরাপত্তা সেটিংস</string>
+    <string name="peers_section_title">মেশ নোডসমূহ</string>
+    <string name="peers_discovered_chip">%1$d কাছাকাছি</string>
+
+    <!-- Biometric & Fallback Authentication -->
+    <string name="auth_lock_title">AH Mesh লক করা আছে</string>
+    <string name="auth_lock_subtitle_biometric">বায়োমেট্রিক দিয়ে যাচাই করুন অথবা আপনার লোকাল অ্যাপ পিন দিন।</string>
+    <string name="auth_lock_subtitle_pin_only">চালিয়ে যেতে আপনার লোকাল অ্যাপ পিন অথবা ডিভাইস লক ব্যবহার করুন।</string>
+    <string name="auth_prompt_title">AH Mesh আনলক</string>
+    <string name="auth_prompt_subtitle">লোকাল P2P সেশন খুলতে আপনার পরিচয় নিশ্চিত করুন</string>
+    <string name="auth_prompt_negative_pin">অ্যাপ পিন দিন</string>
+    <string name="auth_device_prompt_title">ডিভাইস লক বিকল্প</string>
+    <string name="auth_device_prompt_subtitle">আপনার Android পিন, প্যাটার্ন বা পাসওয়ার্ড দিয়ে আনলক করুন</string>
+    <string name="auth_action_try_biometrics">বায়োমেট্রিক ব্যবহার করুন</string>
+    <string name="auth_action_device_lock">ডিভাইস লক ব্যবহার করুন</string>
+    <string name="auth_error_biometric_unavailable">এই ডিভাইসে বায়োমেট্রিক পাওয়া যায়নি। অ্যাপ পিন বা ডিভাইস লক ব্যবহার করুন।</string>
+    <string name="auth_error_biometric_failed">বায়োমেট্রিক যাচাই ব্যর্থ হয়েছে। আবার চেষ্টা করুন অথবা অ্যাপ পিন দিন।</string>
+    <string name="auth_error_biometric_canceled">বায়োমেট্রিক বাতিল হয়েছে। আনলক করতে অ্যাপ পিন দিন।</string>
+    <string name="auth_error_wrong_pin">ভুল অ্যাপ পিন। আবার চেষ্টা করুন।</string>
+    <string name="auth_error_cooldown">অতিরিক্ত ভুল চেষ্টা। %1$d সেকেন্ড পর আবার চেষ্টা করুন।</string>
+    <string name="auth_cd_backspace">শেষ সংখ্যা মুছুন</string>
+    <string name="auth_cd_biometric_key">বায়োমেট্রিক দিয়ে আনলক</string>
+
+    <!-- Security Dashboard Settings Sheet -->
+    <string name="security_sheet_title">নিরাপত্তা ড্যাশবোর্ড</string>
+    <string name="security_sheet_subtitle">বায়োমেট্রিক আনলক, লোকাল অ্যাপ পিন এবং অফলাইন সেশন সুরক্ষা নিয়ন্ত্রণ করুন।</string>
+    <string name="security_badge_protected">অ্যাপ লক সক্রিয়</string>
+    <string name="security_badge_unprotected">আনলক মোড</string>
+    <string name="security_dashboard_pin_label">লোকাল অ্যাপ পিন</string>
+    <string name="security_dashboard_pin_set">সেট করা (%1$d সংখ্যা)</string>
+    <string name="security_dashboard_pin_unset">সেট করা নেই</string>
+    <string name="security_dashboard_fallback_label">ডিভাইস বিকল্প</string>
+    <string name="security_dashboard_fallback_ready">উপলব্ধ</string>
+    <string name="security_dashboard_fallback_unavailable">ডিভাইসে সেট নেই</string>
+    <string name="security_hw_label">বায়োমেট্রিক হার্ডওয়্যার</string>
+    <string name="security_hw_available">প্রস্তুত ও সেট করা</string>
+    <string name="security_hw_not_enrolled">হার্ডওয়্যার প্রস্তুত (সেট করা নেই)</string>
+    <string name="security_hw_unavailable">ডিভাইসে উপলব্ধ নয়</string>
+    <string name="security_toggle_app_lock">অ্যাপ লক চালু করুন</string>
+    <string name="security_toggle_app_lock_desc">অ্যাপ খোলার সময় বায়োমেট্রিক বা পিন যাচাই করুন</string>
+    <string name="security_toggle_biometric">বায়োমেট্রিক আনলক</string>
+    <string name="security_toggle_biometric_desc">স্বয়ংক্রিয়ভাবে ফিঙ্গারপ্রিন্ট বা ফেস যাচাই দেখান</string>
+    <string name="security_toggle_device_fallback">ডিভাইস ক্রেডেনশিয়াল বিকল্প</string>
+    <string name="security_toggle_device_fallback_desc">বায়োমেট্রিক ব্যর্থ হলে Android পিন/প্যাটার্ন ব্যবহারের অনুমতি দিন</string>
+    <string name="security_toggle_lock_bg">ব্যাকগ্রাউন্ড থেকে ফিরলে লক</string>
+    <string name="security_toggle_lock_bg_desc">অন্য অ্যাপ থেকে ফিরে এলে আবার লক করুন</string>
+    <string name="security_btn_change_pin">পিন পরিবর্তন</string>
+    <string name="security_btn_reset_pin">পিন রিসেট</string>
+    <string name="security_btn_set_pin">অ্যাপ পিন সেট করুন</string>
+    <string name="security_btn_lock_now">এখনই লক করুন</string>
+    <string name="security_pin_setup_title">লোকাল অ্যাপ পিন সেট করুন</string>
+    <string name="security_pin_change_title">লোকাল অ্যাপ পিন আপডেট করুন</string>
+    <string name="security_pin_reset_title">লোকাল অ্যাপ পিন রিসেট করুন</string>
+    <string name="security_pin_reset_desc">নতুন লোকাল অ্যাপ পিন সেট করুন অথবা পিন মুছে অ্যাপ লক বন্ধ করুন।</string>
+    <string name="security_pin_clear_button">পিন মুছুন</string>
+    <string name="security_pin_verify_disable_title">লক বন্ধ করতে বর্তমান পিন দিন</string>
+    <string name="security_pin_new_label">৪ থেকে ৬ সংখ্যার পিন</string>
+    <string name="security_pin_confirm_label">পিন নিশ্চিত করুন</string>
+    <string name="security_pin_current_label">বর্তমান অ্যাপ পিন</string>
+    <string name="security_pin_error_length">পিন ৪ থেকে ৬ সংখ্যার হতে হবে।</string>
+    <string name="security_pin_error_mismatch">পিন দুটি মিলছে না।</string>
+    <string name="security_pin_error_wrong_current">বর্তমান পিনটি সঠিক নয়।</string>
+    <string name="security_pin_save">পিন সংরক্ষণ ও লক চালু</string>
+    <string name="security_pin_reset_save">নতুন পিন সংরক্ষণ</string>
+    <string name="security_pin_update">পিন আপডেট করুন</string>
+    <string name="security_pin_disable_confirm">অ্যাপ লক বন্ধ করুন</string>
+    <string name="security_cancel">বাতিল</string>
+
+    <!-- QR Device Pairing -->
+    <string name="cd_open_pairing">QR ডিভাইস পেয়ারিং খুলুন</string>
+    <string name="main_pair_device_cta">QR দিয়ে P2P ডিভাইস পেয়ার</string>
+    <string name="main_pair_device_subtitle">QR স্ক্যান বা কোড দিয়ে অফলাইনে পাবলিক-কি শেয়ার করুন</string>
+    <string name="pairing_screen_title">ডিভাইস পেয়ারিং</string>
+    <string name="cd_pairing_back">পিছনে যান</string>
+    <string name="pairing_peers_badge">%1$d বিশ্বস্ত</string>
+    <string name="pairing_tab_my_qr">আমার QR কোড</string>
+    <string name="pairing_tab_scan_qr">পিয়ার QR স্ক্যান</string>
+    <string name="pairing_generator_title">আপনার নোড আইডেন্টিটি QR</string>
+    <string name="pairing_generator_subtitle">কাছাকাছি থাকা পিয়ারকে অফলাইনে সংযুক্ত হতে এই QR স্ক্যান করতে দিন।</string>
+    <string name="pairing_cd_qr_code">আপনার AH Mesh নোড পেয়ারিং QR কোড</string>
+    <string name="pairing_display_name_label">নোড নাম</string>
+    <string name="pairing_node_id_label">নোড আইডি</string>
+    <string name="pairing_key_fingerprint_label">পাবলিক কি</string>
+    <string name="pairing_public_key_label">পাবলিক কি স্ট্রিং</string>
+    <string name="pairing_copy_to_clipboard">ক্লিপবোর্ডে কপি করুন</string>
+    <string name="pairing_cd_copy_public_key">পাবলিক কি ক্লিপবোর্ডে কপি করুন</string>
+    <string name="pairing_copy_payload">পেয়ারিং কোড কপি</string>
+    <string name="pairing_copied_toast">পেয়ারিং কোড ক্লিপবোর্ডে কপি হয়েছে</string>
+    <string name="pairing_refresh_identity">সেশন রিফ্রেশ</string>
+    <string name="pairing_scanner_title">পিয়ার QR কোড স্ক্যান</string>
+    <string name="pairing_scanner_subtitle">অন্য একটি AH Mesh নোডের QR কার্ডের দিকে ক্যামেরা ধরুন।</string>
+    <string name="pairing_camera_permission_title">ক্যামেরা অনুমতি প্রয়োজন</string>
+    <string name="pairing_camera_permission_desc">অফলাইনে সরাসরি পিয়ার QR স্ক্যান করতে ক্যামেরার অনুমতি দিন।</string>
+    <string name="pairing_grant_camera_cta">ক্যামেরা চালু করুন</string>
+    <string name="pairing_camera_unavailable">এই ডিভাইসে ক্যামেরা পাওয়া যায়নি। নিচে পেয়ারিং কোড পেস্ট করুন।</string>
+    <string name="pairing_torch_on">ফ্ল্যাশ চালু</string>
+    <string name="pairing_torch_off">ফ্ল্যাশ বন্ধ</string>
+    <string name="pairing_scanner_guide_toggle">গাইড</string>
+    <string name="pairing_scanner_guide_toggle_cd">QR অ্যালাইনমেন্ট ওভারলে গাইড চালু বা বন্ধ করুন</string>
+    <string name="pairing_scanner_overlay_align_hint">ফ্রেমের ভেতরে পিয়ার QR রাখুন</string>
+    <string name="pairing_scanner_overlay_error_hint">সঠিকভাবে QR ধরুন ও স্থির রাখুন</string>
+    <string name="pairing_scanner_overlay_distance_hint">১৫–২৫ সেমি দূরে • কোণগুলো মেলান</string>
+    <string name="pairing_scanner_overlay_cd">QR স্ক্যানার অ্যালাইনমেন্ট ভিউফাইন্ডার ওভারলে</string>
+    <string name="pairing_scanner_guide_title">হ্যান্ডশেক অ্যালাইনমেন্ট গাইড</string>
+    <string name="pairing_scanner_guide_step_1">কোণের মার্কারগুলোর মাঝে পিয়ার QR কোড কেন্দ্রে রাখুন।</string>
+    <string name="pairing_scanner_guide_step_2">পরিষ্কার ফোকাসের জন্য ডিভাইস ১৫–২৫ সেমি দূরে স্থির রাখুন।</string>
+    <string name="pairing_scanner_guide_step_3">স্ক্রিনের আলো প্রতিফলন এড়াতে একটু কাত করুন বা ফ্ল্যাশ চালু করুন।</string>
+    <string name="pairing_manual_divider">অথবা পিয়ার পেয়ারিং কোড পেস্ট করুন</string>
+    <string name="pairing_manual_input_label">ahmesh://pair কোড বা JSON</string>
+    <string name="pairing_manual_submit">পিয়ার যুক্ত করুন</string>
+    <string name="pairing_success_title">পিয়ার পেয়ার ও বিশ্বস্ত হয়েছে</string>
+    <string name="pairing_success_subtitle">%1$s (%2$s) আপনার লোকাল মেশ নোডে যুক্ত হয়েছে।</string>
+    <string name="pairing_error_invalid_qr">অবৈধ QR কোড। সঠিক AH Mesh পেয়ারিং কোড স্ক্যান করুন।</string>
+    <string name="pairing_error_self_qr">এটি আপনার নিজের ডিভাইসের QR কোড। অন্য একটি ডিভাইস স্ক্যান করুন।</string>
+    <string name="pairing_dismiss_feedback">বন্ধ করুন</string>
+    <string name="pairing_launch_zxing_scanner">ZXing ফুলস্ক্রিন স্ক্যানার খুলুন</string>
+    <string name="pairing_zxing_prompt">ফ্রেমের ভেতরে অন্য একটি AH Mesh নোডের QR কোড রাখুন</string>
+    <string name="pairing_trusted_peers_title">পেয়ার করা মেশ পিয়ার</string>
+    <string name="pairing_trusted_peers_empty">এখনো কোনো পিয়ার পেয়ার করা হয়নি। সংযোগ করতে পিয়ারের QR স্ক্যান করুন বা আপনারটি শেয়ার করুন।</string>
+
+    <!-- Radar P2P Discovery Pulse -->
+    <string name="radar_searching_title">P2P নোড অনুসন্ধান চলছে</string>
+    <string name="radar_searching_subtitle">%1$s এর মাধ্যমে অফলাইন ডিসকভারি সিগন্যাল পাঠানো হচ্ছে</string>
+    <string name="radar_peers_detected">%1$d টি নিকটবর্তী</string>
+    <string name="radar_stop_scan">স্ক্যান বন্ধ করুন</string>
+    <string name="cd_radar_pulse">নিকটবর্তী P2P ডিভাইস খুঁজতে অ্যানিমেটেড রাডার পালস</string>
+
+    <!-- Public Key Handshake & Troubleshooting -->
+    <string name="pairing_handshake_cta">ফুলস্ক্রিন হ্যান্ডশেক QR দেখুন</string>
+    <string name="pairing_handshake_dialog_title">সিকিউর হ্যান্ডশেক QR</string>
+    <string name="pairing_handshake_dialog_subtitle">অফলাইন পিয়ার হ্যান্ডশেকের জন্য এনক্রিপ্টেড পাবলিক কি পে লোড প্রদর্শন করা হচ্ছে।</string>
+    <string name="pairing_handshake_close">বন্ধ করুন</string>
+    <string name="pairing_troubleshooting_title">ম্যানুয়াল কি এক্সচেঞ্জ ও ট্রাবলশুটিং</string>
+    <string name="pairing_troubleshooting_subtitle">পাবলিক কি কপি করুন অথবা অফলাইন পেয়ারিং টিপস দেখুন।</string>
+    <string name="pairing_copy_public_key">পাবলিক কি কপি করুন</string>
+    <string name="pairing_public_key_copied_toast">পাবলিক কি ক্লিপবোর্ডে কপি হয়েছে</string>
+    <string name="pairing_tip_1">১. নিশ্চিত করুন যে উভয় ডিভাইসেই Wi-Fi চালু আছে (রাউটারে সংযুক্ত থাকার প্রয়োজন নেই, শুধু Wi-Fi Direct এর জন্য চালু থাকতে হবে)।</string>
+    <string name="pairing_tip_2">২. ক্যামেরা ফোকাস করতে সমস্যা হলে স্ক্রিনের ব্রাইটনেস বাড়িয়ে নিন।</string>
+    <string name="pairing_tip_3">৩. ক্যামেরা কাজ না করলে `AHMESH1:...` পেয়ারিং কোডটি ম্যানুফালি পেস্ট করুন।</string>
+
+    <!-- Shareable QR Export, Retry Feedback & Scan History -->
+    <string name="pairing_export_qr_image">শেয়ারযোগ্য QR ইমেজ এক্সপোর্ট</string>
+    <string name="pairing_export_qr_chooser">পাবলিক-কি QR ইমেজ শেয়ার করুন</string>
+    <string name="pairing_export_qr_error">শেয়ার করার জন্য QR ইমেজ তৈরি করা যায়নি।</string>
+    <string name="pairing_save_to_gallery">গ্যালারিতে সংরক্ষণ</string>
+    <string name="pairing_saved_to_gallery_label">গ্যালারিতে সংরক্ষিত</string>
+    <string name="pairing_save_gallery_success_toast">QR কোড ছবি গ্যালারিতে সংরক্ষিত হয়েছে</string>
+    <string name="pairing_save_gallery_error_toast">QR কোড ছবি গ্যালারিতে সংরক্ষণ করা যায়নি।</string>
+    <string name="pairing_cd_save_to_gallery">তৈরি করা QR কোড ছবি গ্যালারিতে সংরক্ষণ করুন</string>
+    <string name="pairing_error_invalid_public_key">অবৈধ পাবলিক-কি ফরম্যাট পাওয়া গেছে। সঠিক Base64 EC-কি যুক্ত QR স্ক্যান করুন।</string>
+    <string name="pairing_error_scan_failed">QR স্ক্যান সম্পন্ন হয়নি। ক্যামেরা স্থির রেখে আবার চেষ্টা করুন।</string>
+    <string name="pairing_retry_dialog_title">QR স্ক্যান ত্রুটি</string>
+    <string name="pairing_retry_dialog_cta">আবার স্ক্যান করুন</string>
+    <string name="pairing_history_title">স্ক্যানকৃত QR ইতিহাস</string>
+    <string name="pairing_history_empty">এখনো কোনো QR স্ক্যান রেকর্ড নেই। সফলভাবে স্ক্যান করা পিয়ার-কি সময়ের সাথে এখানে দেখাবে।</string>
+    <string name="pairing_history_clear">মুছুন</string>
+    <string name="pairing_history_cd_clear">স্ক্যানকৃত QR ইতিহাস মুছুন</string>
+
+    <!-- Biometric QR Protection -->
+    <string name="pairing_qr_locked_title">পাবলিক-কি QR সুরক্ষিত</string>
+    <string name="pairing_qr_locked_subtitle">আপনার পাবলিক পেয়ারিং-কি QR দেখতে ফিঙ্গারপ্রিন্ট, ফেস বা ডিভাইস লক দিয়ে যাচাই করুন।</string>
+    <string name="pairing_unlock_qr_cta">বায়োমেট্রিক দিয়ে আনলক</string>
+    <string name="pairing_lock_qr_cta">QR লুকান</string>
+    <string name="pairing_biometric_prompt_title">পাবলিক-কি QR দেখুন</string>
+    <string name="pairing_biometric_prompt_subtitle">আপনার পেয়ারিং-কি প্রদর্শন করতে ফিঙ্গারপ্রিন্ট, ফেস বা ডিভাইস লক নিশ্চিত করুন</string>
+    <string name="pairing_biometric_auth_canceled">যাচাইকরণ বাতিল হয়েছে। আপনার পাবলিক-কি QR লুকানো রয়েছে।</string>
+    <string name="pairing_biometric_auth_failed">যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।</string>
+    <string name="pairing_biometric_unavailable">এই ডিভাইসে কোনো বায়োমেট্রিক বা স্ক্রিন লক সেট করা নেই।</string>
+
+    <!-- Biometric Security Audit Log -->
+    <string name="pairing_audit_title">বায়োমেট্রিক নিরাপত্তা অডিট</string>
+    <string name="pairing_audit_empty">এখনো কোনো বায়োমেট্রিক আনলক চেষ্টা রেকর্ড হয়নি। সফল ও ব্যর্থ চেষ্টাগুলো এখানে দেখাবে।</string>
+    <string name="pairing_audit_clear">মুছুন</string>
+    <string name="pairing_audit_cd_clear">বায়োমেট্রিক নিরাপত্তা অডিট লগ মুছুন</string>
+    <string name="pairing_audit_outcome_succeeded">যাচাইকৃত</string>
+    <string name="pairing_audit_outcome_failed">ব্যর্থ চেষ্টা</string>
+    <string name="pairing_audit_outcome_canceled">বাতিল</string>
+    <string name="pairing_audit_outcome_error">যাচাই ত্রুটি</string>
+    <string name="pairing_audit_summary_counts">%1$d সফল • %2$d ব্যর্থ</string>
+
+    <!-- Audit Log Export Section -->
+    <string name="pairing_audit_export_title">অডিট লগ এক্সপোর্ট</string>
+    <string name="pairing_audit_export_subtitle">নিরাপত্তা পর্যালোচনার জন্য ডাটাবেস থেকে অডিট ইতিহাস CSV বা টেক্সট ফাইলে এক্সপোর্ট করুন।</string>
+    <string name="pairing_audit_export_format_csv">CSV (.csv)</string>
+    <string name="pairing_audit_export_format_txt">টেক্সট (.txt)</string>
+    <string name="pairing_audit_export_ready_count">এক্সপোর্টের জন্য %1$d টি রেকর্ড প্রস্তুত</string>
+    <string name="pairing_audit_export_empty_hint">অডিট ফাইল এক্সপোর্ট করতে কমপক্ষে একটি বায়োমেট্রিক চেষ্টা রেকর্ড করুন।</string>
+    <string name="pairing_audit_export_save">ফাইল সংরক্ষণ</string>
+    <string name="pairing_audit_export_share">ফাইল শেয়ার</string>
+    <string name="pairing_audit_export_chooser">বায়োমেট্রিক নিরাপত্তা অডিট শেয়ার করুন</string>
+    <string name="pairing_audit_export_saved_toast">%1$d টি অডিট রেকর্ড সংরক্ষিত হয়েছে</string>
+    <string name="pairing_audit_export_error_toast">বায়োমেট্রিক অডিট লগ এক্সপোর্ট করা যায়নি।</string>
+
+    <!-- QR Scan Success/Failure Rate Statistic -->
+    <string name="pairing_qr_rate_title">QR স্ক্যান সফলতার হার</string>
+    <string name="pairing_qr_rate_no_scans">এখনো কোনো QR স্ক্যান রেকর্ড হয়নি</string>
+    <string name="pairing_qr_rate_passed">%1$d সফল</string>
+    <string name="pairing_qr_rate_failed">%1$d ব্যর্থ</string>
+    <string name="pairing_qr_rate_total">মোট %1$d</string>
+    <string name="pairing_qr_rate_cd">QR স্ক্যান সফলতার হার: %1$d শতাংশ (%2$d সফল, %3$d ব্যর্থ)</string>
+
+    <!-- Biometric Setup & Verification Modal -->
+    <string name="biometric_setup_modal_title">বায়োমেট্রিক ক্রেডেনশিয়াল</string>
+    <string name="biometric_setup_modal_subtitle">AH Mesh-এর জন্য ফিঙ্গারপ্রিন্ট বা ফেস আনলক যুক্ত করুন অথবা বিদ্যমান বায়োমেট্রিক যাচাই করুন।</string>
+    <string name="biometric_setup_open_button">বায়োমেট্রিক সেটআপ বা যাচাই</string>
+    <string name="biometric_setup_manage_button">বায়োমেট্রিক যাচাই ও পরিচালনা</string>
+    <string name="biometric_setup_open_cd">বায়োমেট্রিক সেটআপ ও যাচাই খুলুন</string>
+    <string name="biometric_setup_close_cd">বায়োমেট্রিক সেটআপ বন্ধ করুন</string>
+    <string name="biometric_setup_status_enrolled_title">বায়োমেট্রিক সেট করা ও প্রস্তুত</string>
+    <string name="biometric_setup_status_enrolled_desc">আপনার ডিভাইসে বায়োমেট্রিক সক্রিয় আছে। AH Mesh যাচাই করতে পারছে কিনা দেখতে নিচে পরীক্ষা করুন।</string>
+    <string name="biometric_setup_status_not_enrolled_title">বায়োমেট্রিক এখনো সেট করা হয়নি</string>
+    <string name="biometric_setup_status_not_enrolled_desc">বায়োমেট্রিক হার্ডওয়্যার প্রস্তুত, তবে কোনো ফিঙ্গারপ্রিন্ট বা ফেস যুক্ত নেই। সিস্টেম সেটিংস থেকে সেটআপ করুন।</string>
+    <string name="biometric_setup_status_unavailable_title">বায়োমেট্রিক হার্ডওয়্যার উপলব্ধ নয়</string>
+    <string name="biometric_setup_status_unavailable_desc">এই ডিভাইসে বায়োমেট্রিক সমর্থিত নয় বা সাময়িকভাবে অনুপলব্ধ। আপনি এখনো Android স্ক্রিন লক বা অ্যাপ পিন ব্যবহার করতে পারেন।</string>
+    <string name="biometric_setup_device_lock_label">Android স্ক্রিন লক</string>
+    <string name="biometric_setup_device_lock_active">সক্রিয়</string>
+    <string name="biometric_setup_device_lock_missing">সেট নেই</string>
+    <string name="biometric_setup_steps_title">বায়োমেট্রিক সেটআপের ধাপসমূহ</string>
+    <string name="biometric_setup_step_1">১. প্রথমে Android স্ক্রিন লক (পিন, প্যাটার্ন বা পাসওয়ার্ড) চালু আছে কিনা নিশ্চিত করুন।</string>
+    <string name="biometric_setup_step_2">২. সিস্টেম নিরাপত্তা সেটিংসে আপনার ফিঙ্গারপ্রিন্ট বা ফেস যুক্ত করুন।</string>
+    <string name="biometric_setup_step_3">৩. AH Mesh-এ ফিরে এসে যাচাই করতে বায়োমেট্রিক যাচাই করুন চাপুন।</string>
+    <string name="biometric_setup_cta_enroll">সিস্টেম সেটিংসে এনরোল করুন</string>
+    <string name="biometric_setup_cta_security_settings">সিস্টেম নিরাপত্তা সেটিংস খুলুন</string>
+    <string name="biometric_setup_cta_manage_settings">সিস্টেম সেটিংসে পরিচালনা</string>
+    <string name="biometric_setup_cta_verify">এখনই বায়োমেট্রিক যাচাই করুন</string>
+    <string name="biometric_setup_cta_verify_device_lock">ডিভাইস স্ক্রিন লক যাচাই করুন</string>
+    <string name="biometric_setup_verify_prompt_title">বায়োমেট্রিক ক্রেডেনশিয়াল যাচাই</string>
+    <string name="biometric_setup_verify_prompt_subtitle">AH Mesh-এর জন্য আপনার ফিঙ্গারপ্রিন্ট বা ফেস নিশ্চিত করুন</string>
+    <string name="biometric_setup_result_verified">বায়োমেট্রিক সফলভাবে যাচাই হয়েছে। AH Mesh বায়োমেট্রিক আনলক এখন ব্যবহারের জন্য প্রস্তুত।</string>
+    <string name="biometric_setup_result_device_verified">বিকল্প হিসেবে ডিভাইস স্ক্রিন লক যাচাই সফল হয়েছে।</string>
+    <string name="biometric_setup_result_failed">বায়োমেট্রিক শনাক্ত করা যায়নি। আবার চেষ্টা করুন।</string>
+    <string name="biometric_setup_result_canceled">সম্পন্ন হওয়ার আগেই যাচাই বাতিল হয়েছে।</string>
+    <string name="biometric_setup_result_settings_error">এই ডিভাইসে স্বয়ংক্রিয়ভাবে Android নিরাপত্তা সেটিংস খোলা যায়নি।</string>
+    <string name="biometric_setup_settings_banner_title">বায়োমেট্রিক আনলক সেটআপ করুন</string>
+    <string name="biometric_setup_settings_banner_desc">অ্যাপ লক ও পাবলিক-কি QR সুরক্ষিত রাখতে Android সেটিংস থেকে ফিঙ্গারপ্রিন্ট বা ফেস যুক্ত করুন।</string>
+    <string name="biometric_setup_done">সম্পন্ন</string>
+
+    <!-- Recent Successful QR Scans Tab & List -->
+    <string name="pairing_tab_history">স্ক্যান ইতিহাস</string>
+    <string name="pairing_history_subtitle">লোকাল Room ডাটাবেস থেকে প্রাপ্ত সাম্প্রতিক সফল QR কোড স্ক্যানের তালিকা।</string>
+    <string name="pairing_history_count_badge">%1$d টি স্ক্যান</string>
+    <string name="pairing_history_date_cd">স্ক্যানের তারিখ</string>
+    <string name="pairing_history_time_cd">স্ক্যানের সময়</string>
+    <string name="pairing_history_verified_badge">যাচাইকৃত</string>
+
+    <!-- Biometric Authentication Events Table -->
+    <string name="pairing_events_table_title">সাম্প্রতিক বায়োমেট্রিক ইভেন্ট</string>
+    <string name="pairing_events_table_subtitle">প্রতিটি প্রচেষ্টার সময়, ফলাফল ও ইভেন্টের ধরনসহ সারণি।</string>
+    <string name="pairing_events_table_count">%1$d টি ইভেন্ট</string>
+    <string name="pairing_events_table_col_timestamp">সময়</string>
+    <string name="pairing_events_table_col_result">ফলাফল</string>
+    <string name="pairing_events_table_col_event_type">ইভেন্টের ধরন</string>
+    <string name="pairing_events_table_empty">এখনো কোনো বায়োমেট্রিক ইভেন্ট রেকর্ড হয়নি।</string>
+    <string name="pairing_event_type_qr_biometric">QR কী বায়োমেট্রিক</string>
+    <string name="pairing_event_type_qr_device">QR কী ডিভাইস লক</string>
+    <string name="pairing_event_type_biometric_or_device">QR ভল্ট যাচাই</string>
+    <string name="pairing_event_type_setup_verify">ক্রেডেনশিয়াল যাচাই</string>
+    <string name="pairing_event_type_handshake">হ্যান্ডশেক যাচাই</string>
+
+    <!-- Global Theme Appearance Settings -->
+    <string name="settings_appearance_title">থিম ও প্রদর্শন</string>
+    <string name="settings_toggle_dark_mode">ডার্ক মোড</string>
+    <string name="settings_toggle_dark_mode_on_desc">সব স্ক্রিনে ডার্ক মেটালিক থিম সক্রিয় আছে</string>
+    <string name="settings_toggle_dark_mode_off_desc">সব স্ক্রিনে লাইট থিম সক্রিয় আছে</string>
+
+    <!-- QR Scan Statistics Table -->
+    <string name="pairing_qr_stats_table_title">QR স্ক্যান পরিসংখ্যান টেবিল</string>
+    <string name="pairing_qr_stats_table_subtitle">স্ক্যান ফলাফল, সফলতার হার এবং ব্যর্থতার কাঠামোগত বিবরণ।</string>
+    <string name="pairing_qr_stats_table_metric">ফলাফল</string>
+    <string name="pairing_qr_stats_table_count">সংখ্যা</string>
+    <string name="pairing_qr_stats_table_rate">হার %</string>
+    <string name="pairing_qr_stats_row_total">মোট স্ক্যান</string>
+    <string name="pairing_qr_stats_row_successful">সফল স্ক্যান</string>
+    <string name="pairing_qr_stats_row_failed">ব্যর্থ স্ক্যান</string>
+    <string name="pairing_qr_stats_empty">এখনো কোনো QR স্ক্যান রেকর্ড হয়নি।</string>
+
+    <!-- Handshake Biometric Authentication Prompt -->
+    <string name="pairing_handshake_biometric_title">হ্যান্ডশেক যাচাইকরণ</string>
+    <string name="pairing_handshake_biometric_subtitle">নিরাপদ হ্যান্ডশেক QR কি প্রদর্শন করতে আপনার বায়োমেট্রিক পরিচয় নিশ্চিত করুন।</string>
+
+    <!-- P2P Mesh AI Assistant -->
+    <string name="assistant_screen_title">P2P মেশ সহকারী</string>
+    <string name="assistant_welcome_title">AH Mesh এআই সহকারী</string>
+    <string name="assistant_welcome_subtitle">Gemini চালিত সহকারী। P2P নেটওয়ার্ক অবস্থা, Wi-Fi Direct, অফলাইন হ্যান্ডশেক বা সংযোগ সমস্যার সমাধান জানতে প্রশ্ন করুন।</string>
+    <string name="assistant_prompt_placeholder">P2P নেটওয়ার্ক, পেয়ারিং বা মেশ সম্পর্কে জানুন...</string>
+    <string name="assistant_chip_network_status">P2P নেটওয়ার্ক অবস্থা</string>
+    <string name="assistant_chip_pairing_help">অফলাইনে পেয়ার করব কীভাবে?</string>
+    <string name="assistant_chip_troubleshoot">মেশ সংযোগ সমস্যা সমাধান</string>
+    <string name="assistant_chip_wifi_direct">Wi-Fi Direct বনাম লোকাল LAN</string>
+    <string name="assistant_send">পাঠান</string>
+    <string name="assistant_empty_prompt">একটি প্রশ্ন বা বিষয় লিখুন।</string>
+    <string name="assistant_streaming">চিন্তা করা হচ্ছে...</string>
+    <string name="assistant_clear_chat">চ্যাট মুছুন</string>
+    <string name="assistant_topbar_button_cd">P2P মেশ সহকারী খুলুন</string>
+    <string name="assistant_network_context_header">বর্তমান P2P নেটওয়ার্ক তথ্য</string>
+
+    <!-- Biometric Authentication Analytics Screen -->
+    <string name="pairing_biometric_stats_topbar_cd">বায়োমেট্রিক অ্যানালিটিক্স বার চার্ট খুলুন</string>
+    <string name="pairing_view_biometric_chart">বার চার্ট দেখুন</string>
+    <string name="settings_biometric_analytics_cta">বায়োমেট্রিক অ্যানালিটিক্স</string>
+    <string name="biometric_stats_screen_title">বায়োমেট্রিক অ্যানালিটিক্স</string>
+    <string name="biometric_stats_screen_subtitle">Room অডিট লগ পরিসংখ্যান</string>
+    <string name="biometric_stats_back_cd">বায়োমেট্রিক অ্যানালিটিক্স থেকে ফিরে যান</string>
+    <string name="biometric_stats_clear_cd">বায়োমেট্রিক অডিট লগ মুছুন</string>
+    <string name="biometric_stats_clear_dialog_title">বায়োমেট্রিক লগ মুছবেন?</string>
+    <string name="biometric_stats_clear_dialog_body">এটি আপনার লোকাল Room ডাটাবেস থেকে সংরক্ষিত সকল বায়োমেট্রিক সফল ও ব্যর্থতার তথ্য মুছে ফেলবে।</string>
+    <string name="biometric_stats_clear_confirm">লগ মুছুন</string>
+    <string name="biometric_stats_kpi_total">মোট লগ</string>
+    <string name="biometric_stats_kpi_success_rate">সফলতার হার</string>
+    <string name="biometric_stats_kpi_failure_rate">ব্যর্থতার হার</string>
+    <string name="biometric_stats_chart_title">সফলতা বনাম ব্যর্থতার হার</string>
+    <string name="biometric_stats_chart_subtitle">সকল Room বায়োমেট্রিক অডিট এন্ট্রির সামগ্রিক পরিসংখ্যান</string>
+    <string name="biometric_stats_mode_rate">হার (%)</string>
+    <string name="biometric_stats_mode_count">সংখ্যা (#)</string>
+    <string name="biometric_stats_bar_success">সফল</string>
+    <string name="biometric_stats_bar_failure">ব্যর্থ</string>
+    <string name="biometric_stats_bar_verified">যাচাইকৃত</string>
+    <string name="biometric_stats_bar_failed">ব্যর্থ</string>
+    <string name="biometric_stats_bar_canceled">বাতিল</string>
+    <string name="biometric_stats_bar_error">ত্রুটি</string>
+    <string name="biometric_stats_tooltip_attempts">%2$d বারের মধ্যে %1$d বার (%3$d%%)</string>
+    <string name="biometric_stats_tooltip_failure_detail">%1$d ব্যর্থ • %2$d বাতিল • %3$d ত্রুটি</string>
+    <string name="biometric_stats_outcome_title">ফলাফল বিভাজন</string>
+    <string name="biometric_stats_outcome_subtitle">যাচাইকৃত, ব্যর্থ, বাতিল এবং ত্রুটি ইভেন্টের বিস্তারিত চার্ট</string>
+    <string name="biometric_stats_method_title">ইভেন্ট অনুযায়ী হার</string>
+    <string name="biometric_stats_method_subtitle">প্রতিটি বায়োমেট্রিক ধাপের সফল ও ব্যর্থতার অনুপাত</string>
+    <string name="biometric_stats_method_counts">%1$d সফল • %2$d ব্যর্থ</string>
+    <string name="biometric_stats_empty_title">কোনো বায়োমেট্রিক লগ নেই</string>
+    <string name="biometric_stats_empty_subtitle">Room ডাটাবেসে সফল ও ব্যর্থতার চার্ট দেখতে পেয়ারিং QR আনলক, হ্যান্ডশেক যাচাই অথবা ক্রেডেনশিয়াল পরীক্ষা সম্পন্ন করুন।</string>
+    <string name="biometric_stats_chart_cd">বায়োমেট্রিক যাচাইয়ের সফলতা ও ব্যর্থতার হার তুলনামূলক বার চার্ট</string>
+
+    <!-- Launcher App Shortcuts -->
+    <string name="shortcut_qr_scanner_short">QR স্ক্যান</string>
+    <string name="shortcut_qr_scanner_long">QR স্ক্যানার খুলুন</string>
+    <string name="shortcut_assistant_short">এআই সহকারী</string>
+    <string name="shortcut_assistant_long">P2P সহকারী খুলুন</string>
+    <string name="shortcut_disabled_message">শর্টকাট উপলব্ধ নয়</string>
+
+    <!-- Wi-Fi Direct Discovery & Session UI -->
+    <string name="wifi_direct_session_title">Wi-Fi Direct সংযোগ</string>
+    <string name="wifi_direct_role_owner">গ্রুপ ওনার (হোস্ট)</string>
+    <string name="wifi_direct_role_client">গ্রুপ ক্লায়েন্ট</string>
+    <string name="wifi_direct_owner_ip">হোস্ট IP: %1$s</string>
+    <string name="wifi_direct_peer_ip">পিয়ার IP: %1$s</string>
+    <string name="wifi_direct_peer_ip_pending">পিয়ার IP: ক্লায়েন্ট সকেটের অপেক্ষায়</string>
+    <string name="wifi_direct_server_listening">সকেট সার্ভার চালু :%1$d</string>
+    <string name="wifi_direct_server_standby">সকেট সার্ভার স্ট্যান্ডবাই</string>
+    <string name="wifi_direct_disconnect">বিচ্ছিন্ন করুন</string>
+    <string name="wifi_direct_open_transfer">ট্রান্সফার হাব খুলুন</string>
+    <string name="wifi_direct_nearby_title">কাছাকাছি Wi-Fi Direct পিয়ার</string>
+    <string name="wifi_direct_connect">সংযুক্ত করুন</string>
+    <string name="wifi_direct_connecting">আমন্ত্রিত…</string>
+    <string name="wifi_direct_connected_chip">সংযুক্ত</string>
+    <string name="wifi_direct_status_available">উপলব্ধ</string>
+    <string name="wifi_direct_status_invited">আমন্ত্রিত</string>
+    <string name="wifi_direct_status_connected">সংযুক্ত</string>
+    <string name="wifi_direct_status_failed">ব্যর্থ</string>
+    <string name="wifi_direct_status_unavailable">অনুপলব্ধ</string>
+    <string name="wifi_direct_transfer_cta_title">P2P চ্যাট, ফাইল ও APK ট্রান্সফার</string>
+    <string name="wifi_direct_transfer_cta_subtitle">সরাসরি TCP সকেটের মাধ্যমে বার্তা, ফাইল ও ইনস্টল করা অ্যাপের APK পাঠান</string>
+    <string name="cd_open_transfer_hub">P2P ট্রান্সফার হাব খুলুন</string>
+
+    <!-- Transfer Hub Screen -->
+    <string name="transfer_screen_title">P2P ট্রান্সফার হাব</string>
+    <string name="cd_transfer_back">P2P ট্রান্সফার হাব থেকে ফিরে যান</string>
+    <string name="transfer_target_host_label">টার্গেট পিয়ার IP ঠিকানা</string>
+    <string name="transfer_target_host_hint">Wi-Fi Direct সংযোগে স্বয়ংক্রিয় বা LAN IP লিখুন</string>
+    <string name="transfer_port_badge">TCP :%1$d</string>
+    <string name="transfer_storage_folder_hint">প্রাপ্ত ফাইল ও APK সংরক্ষিত হচ্ছে: %1$s</string>
+    <string name="transfer_size_limit_title">ফাইলের আকার সতর্কতা সীমা</string>
+    <string name="transfer_size_limit_value">%1$d MB</string>
+    <string name="transfer_message_input_hint">P2P বার্তা লিখুন…</string>
+    <string name="transfer_send_message_cd">বার্তা পাঠান</string>
+    <string name="transfer_pick_file_button">ফাইল পাঠান</string>
+    <string name="transfer_pick_apk_button">অ্যাপ APK</string>
+    <string name="transfer_active_section_title">চলমান ট্রান্সফার</string>
+    <string name="transfer_clear_completed">সম্পন্ন মুছুন</string>
+    <string name="transfer_direction_outgoing">পাঠানো হচ্ছে</string>
+    <string name="transfer_direction_incoming">গ্রহণ করা হচ্ছে</string>
+    <string name="transfer_status_queued">সারিবদ্ধ</string>
+    <string name="transfer_status_transferring">ট্রান্সফার • %1$d%%</string>
+    <string name="transfer_status_completed">সংরক্ষিত • %1$s</string>
+    <string name="transfer_status_failed">ব্যর্থ: %1$s</string>
+    <string name="transfer_messages_empty_title">সরাসরি P2P ট্রান্সফারের জন্য প্রস্তুত</string>
+    <string name="transfer_messages_empty_subtitle">Wi-Fi Direct দিয়ে কাছাকাছি পিয়ার যুক্ত করুন বা LAN IP দিন, এরপর বার্তা, ফাইল বা অ্যাপ APK পাঠান।</string>
+    <string name="transfer_msg_status_sending">পাঠানো হচ্ছে…</string>
+    <string name="transfer_msg_status_delivered">পৌঁছেছে</string>
+    <string name="transfer_msg_status_failed">ব্যর্থ</string>
+    <string name="transfer_size_warning_title">বড় ফাইলের সতর্কতা</string>
+    <string name="transfer_size_warning_body">\"%1$s\" ফাইলটির আকার %2$s, যা আপনার নির্ধারিত %3$s সীমা অতিক্রম করেছে। পাঠাতে চান?</string>
+    <string name="transfer_size_warning_confirm">তবুও পাঠান</string>
+    <string name="transfer_size_warning_cancel">বাতিল</string>
+    <string name="transfer_apk_picker_title">ইনস্টল করা অ্যাপ (APK) শেয়ার করুন</string>
+    <string name="transfer_apk_search_hint">অ্যাপ খুঁজুন…</string>
+    <string name="transfer_apk_loading">অ্যাপ APK তালিকা লোড হচ্ছে…</string>
+    <string name="transfer_apk_empty">শেয়ারযোগ্য কোনো অ্যাপ পাওয়া যায়নি।</string>
+    <string name="transfer_apk_send_action">APK পাঠান</string>
+    <string name="transfer_apk_close">বন্ধ করুন</string>
+
+    <!-- Network Telemetry & Traffic Visualization -->
+    <string name="network_telemetry_open_button">ট্রাফিক ও স্থিতিশীলতা</string>
+    <string name="network_telemetry_cd_open">নেটওয়ার্ক ট্রাফিক ও স্থিতিশীলতা চার্ট খুলুন</string>
+    <string name="telemetry_screen_title">নেটওয়ার্ক টেলিমেট্রি</string>
+    <string name="telemetry_screen_subtitle">লাইভ P2P ট্রাফিক ও সংযোগ স্থিতিশীলতা</string>
+    <string name="telemetry_back_cd">নেটওয়ার্ক টেলিমেট্রি থেকে ফিরে যান</string>
+    <string name="telemetry_probe_cd">লাইভ টেলিমেট্রি স্যাম্পল নিন</string>
+    <string name="telemetry_clear_cd">টেলিমেট্রি ইতিহাস মুছুন</string>
+    <string name="telemetry_clear_dialog_title">টেলিমেট্রি ইতিহাস মুছবেন?</string>
+    <string name="telemetry_clear_dialog_body">এটি আপনার লোকাল Room ডাটাবেস থেকে সংরক্ষিত সকল P2P স্থিতিশীলতা তথ্য মুছে ফেলবে।</string>
+    <string name="telemetry_clear_confirm">ইতিহাস মুছুন</string>
+    <string name="telemetry_range_15m">১৫মি</string>
+    <string name="telemetry_range_1h">১ঘ</string>
+    <string name="telemetry_range_24h">২৪ঘ</string>
+    <string name="telemetry_range_all">সব</string>
+    <string name="telemetry_kpi_stability">গড় স্থিতিশীলতা</string>
+    <string name="telemetry_kpi_traffic">P2P ট্রাফিক</string>
+    <string name="telemetry_kpi_peak_peers">সর্বোচ্চ পিয়ার</string>
+    <string name="telemetry_stability_title">সময়ের সাথে সংযোগ স্থিতিশীলতা</string>
+    <string name="telemetry_stability_subtitle">লিঙ্ক হেলথ স্কোর (০–১০০%) এবং পিয়ার টাইমলাইন</string>
+    <string name="telemetry_stability_chart_cd">সময়ের সাথে P2P সংযোগ স্থিতিশীলতার এরিয়া চার্ট</string>
+    <string name="telemetry_stability_empty">এই সময়সীমায় কোনো স্যাম্পল নেই। বর্তমান অবস্থা লগ করতে প্রোব আইকনে ট্যাপ করুন।</string>
+    <string name="telemetry_stability_tooltip_detail">%1$d%% স্থিতিশীলতা • %2$d সংযুক্ত • %3$d কাছাকাছি</string>
+    <string name="telemetry_traffic_title">P2P নেটওয়ার্ক ট্রাফিক প্যাটার্ন</string>
+    <string name="telemetry_traffic_subtitle">সময়ের সাথে আউটগোয়িং বনাম ইনকামিং সকেট ডেটা</string>
+    <string name="telemetry_traffic_chart_cd">সময়ের সাথে আউটগোয়িং ও ইনকামিং P2P ট্রাফিক বার চার্ট</string>
+    <string name="telemetry_metric_volume">পরিমাণ (KB)</string>
+    <string name="telemetry_metric_transfers">প্যাকেট (#)</string>
+    <string name="telemetry_legend_outgoing">আউটগোয়িং</string>
+    <string name="telemetry_legend_incoming">ইনকামিং</string>
+    <string name="telemetry_legend_delivered">সম্পন্ন</string>
+    <string name="telemetry_legend_failed">ব্যর্থ</string>
+    <string name="telemetry_traffic_tooltip">%1$s: পাঠানো %2$s • প্রাপ্ত %3$s (%4$d ট্রান্সফার)</string>
+    <string name="telemetry_mix_text">বার্তা: %1$d</string>
+    <string name="telemetry_mix_files">ফাইল: %1$d</string>
+    <string name="telemetry_mix_apks">APK: %1$d</string>
+    <string name="telemetry_transport_title">ট্রান্সপোর্ট মোড স্থিতিশীলতা বিভাজন</string>
+    <string name="telemetry_transport_subtitle">Wi-Fi Direct, লোকাল LAN এবং স্ট্যান্ডবাই অনুপাত</string>
+    <string name="telemetry_samples_count">%1$d স্যাম্পল</string>
+    <string name="live_metrics_open_button">লাইভ লাইন চার্ট</string>
+    <string name="live_metrics_open_cd">রিয়েল-টাইম P2P লাইন চার্ট মনিটর খুলুন</string>
+    <string name="live_metrics_screen_title">লাইভ P2P মনিটর</string>
+    <string name="live_metrics_screen_subtitle">রিয়েল-টাইম ট্রাফিক ও সংযোগ স্থিতিশীলতা</string>
+    <string name="live_metrics_back_cd">লাইভ মনিটর থেকে ফিরে যান</string>
+    <string name="live_metrics_badge_live">লাইভ</string>
+    <string name="live_metrics_badge_paused">বিরতি</string>
+    <string name="live_metrics_toggle_cd">লাইভ স্ট্রিম চালু বা বিরতি দিন</string>
+    <string name="live_metrics_clear_cd">লাইভ বাফার পরিষ্কার করুন</string>
+    <string name="live_window_30s">৩০ সে.</string>
+    <string name="live_window_60s">৬০ সে.</string>
+    <string name="live_window_2m">২ মি.</string>
+    <string name="live_kpi_stability">স্থিতিশীলতা</string>
+    <string name="live_kpi_throughput">ট্রাফিক/টিক</string>
+    <string name="live_kpi_links">সংযুক্ত/নিকটবর্তী</string>
+    <string name="live_metrics_chart_title">রিয়েল-টাইম ট্রাফিক ও স্থিতিশীলতা</string>
+    <string name="live_metrics_chart_subtitle">ডুয়াল-অ্যাক্সিস স্ট্রিম: % স্থিতিশীলতা (বাম) ও KB ট্রাফিক (ডান)</string>
+    <string name="live_metrics_chart_cd">সময়ের সাথে P2P সংযোগ স্থিতিশীলতা ও ট্রাফিকের রিয়েল-টাইম লাইন চার্ট</string>
+    <string name="live_series_stability">স্থিতিশীলতা (%)</string>
+    <string name="live_series_outgoing">আউট (KB)</string>
+    <string name="live_series_incoming">ইন (KB)</string>
+    <string name="live_metrics_empty_stream">প্রাথমিক লাইভ টেলিমেট্রি তথ্য সংগ্রহ হচ্ছে…</string>
+    <string name="live_metrics_resume_live_tail">লাইভ টেইল</string>
+    <string name="live_metrics_hud_detail">স্থিতিশীলতা %1$d%% • পাঠানো %2$s • প্রাপ্ত %3$s • %4$d সংযুক্ত</string>
+    <string name="live_ticks_title">সাম্প্রতিক লাইভ টিক</string>
+    <string name="live_ticks_empty">লাইভ P2P টেলিমেট্রি স্যাম্পলের জন্য অপেক্ষা করা হচ্ছে।</string>
+    <string name="live_ticks_row_detail">পাঠানো %1$s • প্রাপ্ত %2$s • %3$s</string>
+
+    <!-- Live P2P Summary & End-to-End Transfer Actions -->
+    <string name="main_live_card_title_connected">মেশ লিংক সক্রিয়</string>
+    <string name="main_live_card_title_discovering">কাছাকাছি পিয়ার খোঁজা হচ্ছে</string>
+    <string name="main_live_card_title_ready">অফলাইন P2P প্রস্তুত</string>
+    <string name="main_live_card_title_permission">কাছাকাছি অনুমতি প্রয়োজন</string>
+    <string name="main_live_card_title_offline">লোকাল রেডিও বন্ধ</string>
+    <string name="main_live_card_desc_connected">%1$s মাধ্যমে সরাসরি TCP সকেট সংযোগ সক্রিয় রয়েছে।</string>
+    <string name="main_live_card_desc_discovering">%1$s দিয়ে অফলাইন ডিসকভারি সিগন্যাল পাঠানো হচ্ছে।</string>
+    <string name="main_live_card_desc_ready">%1$s সকেট প্রস্তুত। QR দিয়ে পেয়ার করুন অথবা কাছাকাছি ডিভাইস খুঁজুন।</string>
+    <string name="main_live_card_desc_permission">স্বয়ংক্রিয় ডিসকভারির জন্য অনুমতি দিন বা ট্রান্সফার হাবে LAN IP দিন।</string>
+    <string name="main_live_card_desc_offline">Wi-Fi Direct ডিসকভারির জন্য Wi-Fi চালু করুন বা লোকাল LAN ব্যবহার করুন।</string>
+    <string name="main_live_metric_transport">ট্রান্সপোর্ট: %1$s</string>
+    <string name="main_live_metric_peers">%1$d সংযুক্ত • %2$d কাছাকাছি</string>
+    <string name="main_live_metric_socket_up">TCP :%1$d চালু</string>
+    <string name="main_live_metric_socket_down">TCP স্ট্যান্ডবাই</string>
+    <string name="main_live_recent_transfer">সাম্প্রতিক ট্রান্সফার: %1$s (%2$d%%)</string>
+    <string name="main_live_recent_message">সর্বশেষ বার্তা: %1$s</string>
+    <string name="main_live_recent_pairing">সর্বশেষ পেয়ার্ড পিয়ার: %1$s (%2$s)</string>
+    <string name="main_live_no_recent_activity">এখনো কোনো ট্রান্সফার বা QR স্ক্যান হয়নি — অফলাইন P2P প্রস্তুত।</string>
+    <string name="main_live_action_pair">QR পেয়ার</string>
+    <string name="main_live_action_transfer">ট্রান্সফার হাব</string>
+    <string name="pairing_open_peer_transfer">চ্যাট ও পাঠান</string>
+    <string name="pairing_cd_open_peer_transfer">%1$s-এর সাথে P2P চ্যাট ও ফাইল ট্রান্সফার খুলুন</string>
+    <string name="transfer_cd_refresh_link">Wi-Fi Direct হোস্ট ও সকেট সংযোগ রিফ্রেশ করুন</string>
+    <string name="transfer_open_file_action">খুলতে ট্যাপ করুন</string>
+    <string name="transfer_open_apk_action">APK খুলতে ট্যাপ করুন</string>
+    <string name="transfer_open_error_toast">%1$s খোলার জন্য উপযুক্ত অ্যাপ পাওয়া যায়নি।</string>
+</resources>

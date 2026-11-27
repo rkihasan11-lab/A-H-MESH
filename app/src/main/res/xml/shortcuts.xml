@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="open_qr_scanner"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_qr_scanner"
+        android:shortcutShortLabel="@string/shortcut_qr_scanner_short"
+        android:shortcutLongLabel="@string/shortcut_qr_scanner_long"
+        android:shortcutDisabledMessage="@string/shortcut_disabled_message">
+        <intent
+            android:action="com.ahmesh.app.action.OPEN_QR_SCANNER"
+            android:targetPackage="com.ahmesh.app"
+            android:targetClass="com.ahmesh.app.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="open_assistant"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_assistant"
+        android:shortcutShortLabel="@string/shortcut_assistant_short"
+        android:shortcutLongLabel="@string/shortcut_assistant_long"
+        android:shortcutDisabledMessage="@string/shortcut_disabled_message">
+        <intent
+            android:action="com.ahmesh.app.action.OPEN_ASSISTANT"
+            android:targetPackage="com.ahmesh.app"
+            android:targetClass="com.ahmesh.app.MainActivity" />
+    </shortcut>
+</shortcuts>

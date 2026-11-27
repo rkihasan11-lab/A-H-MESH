@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AH Mesh</string>
+    <string name="main_screen_title">AH Mesh</string>
+    <string name="main_placeholder_title">Live Mesh Monitor</string>
+    <string name="main_placeholder_subtitle">Pair via QR, discover nearby Wi-Fi Direct nodes, or open the Transfer Hub to exchange files and APKs offline.</string>
+
+    <string name="brand_tagline">SECURE  |  P2P  |  OFFLINE</string>
+    <string name="brand_banner_desc">Zero-cloud local mesh communication with hardware-backed access lock.</string>
+    <string name="brand_about_button">About</string>
+    <string name="brand_about_title">About AH Mesh</string>
+    <string name="brand_about_body">AH Mesh creates encrypted peer-to-peer local links over Wi-Fi Direct and local LAN without external servers. Protect local sessions with Biometric Unlock, a salted local App PIN, and Android device lock fallback.</string>
+    <string name="brand_about_close">Done</string>
+    <string name="cd_ah_mesh_logo">AH Mesh emblem</string>
+
+    <string name="network_card_header">P2P Mesh Link</string>
+    <string name="network_status_connected">Connected</string>
+    <string name="network_status_discovering">Scanning Nearby</string>
+    <string name="network_status_ready">P2P Ready</string>
+    <string name="network_status_permission">Permission Needed</string>
+    <string name="network_status_offline">Offline</string>
+
+    <string name="network_desc_connected">Direct local mesh active with %1$d peer(s). End-to-end encrypted.</string>
+    <string name="network_desc_discovering">Broadcasting and scanning for nearby AH Mesh nodes over Wi-Fi Direct.</string>
+    <string name="network_desc_ready">Local radio ready. Start nearby discovery to detect nearby peers offline.</string>
+    <string name="network_desc_permission">Grant nearby device permission to enable Wi-Fi Direct peer discovery.</string>
+    <string name="network_desc_offline">Enable Wi-Fi or local radio to establish an offline P2P mesh link.</string>
+
+    <string name="network_metric_peers">Peers</string>
+    <string name="network_metric_transport">Transport</string>
+    <string name="network_metric_wifi">Wi-Fi Radio</string>
+    <string name="network_wifi_on">Active</string>
+    <string name="network_wifi_off">Disabled</string>
+    <string name="network_transport_wifi_direct">Wi-Fi Direct</string>
+    <string name="network_transport_local_mesh">Local LAN</string>
+    <string name="network_transport_unavailable">Standby</string>
+
+    <string name="network_action_start_scan">Start Discovery</string>
+    <string name="network_action_stop_scan">Stop Discovery</string>
+    <string name="network_action_grant_permission">Grant Permission</string>
+    <string name="network_action_refresh">Refresh Link</string>
+    <string name="network_cd_refresh">Refresh network status</string>
+    <string name="network_cd_indicator">P2P connection status indicator: %1$s</string>
+    <string name="cd_language_toggle">Switch language</string>
+    <string name="cd_security_settings">Security settings</string>
+    <string name="peers_section_title">Mesh Nodes</string>
+    <string name="peers_discovered_chip">%1$d nearby</string>
+
+    <!-- Biometric & Fallback Authentication -->
+    <string name="auth_lock_title">AH Mesh Locked</string>
+    <string name="auth_lock_subtitle_biometric">Verify with biometrics or enter your local App PIN to access offline mesh sessions.</string>
+    <string name="auth_lock_subtitle_pin_only">Enter your local App PIN or use your device screen lock to continue.</string>
+    <string name="auth_prompt_title">Unlock AH Mesh</string>
+    <string name="auth_prompt_subtitle">Confirm your identity to access local P2P conversations</string>
+    <string name="auth_prompt_negative_pin">Use App PIN</string>
+    <string name="auth_device_prompt_title">Device Lock Fallback</string>
+    <string name="auth_device_prompt_subtitle">Authenticate using your Android PIN, pattern, or password</string>
+    <string name="auth_action_try_biometrics">Use Biometrics</string>
+    <string name="auth_action_device_lock">Use Device Lock</string>
+    <string name="auth_error_biometric_unavailable">Biometrics unavailable on this device. Enter your App PIN or use Device Lock.</string>
+    <string name="auth_error_biometric_failed">Biometric verification failed. Try again or enter your App PIN.</string>
+    <string name="auth_error_biometric_canceled">Biometric prompt canceled. Enter your App PIN to unlock.</string>
+    <string name="auth_error_wrong_pin">Incorrect App PIN. Please try again.</string>
+    <string name="auth_error_cooldown">Too many incorrect attempts. Wait %1$ds to try again.</string>
+    <string name="auth_cd_backspace">Delete last digit</string>
+    <string name="auth_cd_biometric_key">Unlock with biometrics</string>
+
+    <!-- Security Dashboard Settings Sheet -->
+    <string name="security_sheet_title">Security Dashboard</string>
+    <string name="security_sheet_subtitle">Manage biometric unlock, local app PIN, and offline session protection.</string>
+    <string name="security_badge_protected">App Lock Active</string>
+    <string name="security_badge_unprotected">Unlocked Mode</string>
+    <string name="security_dashboard_pin_label">Local App PIN</string>
+    <string name="security_dashboard_pin_set">Configured (%1$d digits)</string>
+    <string name="security_dashboard_pin_unset">Not Configured</string>
+    <string name="security_dashboard_fallback_label">Device Fallback</string>
+    <string name="security_dashboard_fallback_ready">Available</string>
+    <string name="security_dashboard_fallback_unavailable">Not Set on Device</string>
+    <string name="security_hw_label">Biometric Hardware</string>
+    <string name="security_hw_available">Ready &amp; Enrolled</string>
+    <string name="security_hw_not_enrolled">Hardware Ready (Not Enrolled)</string>
+    <string name="security_hw_unavailable">Not Available on Device</string>
+    <string name="security_toggle_app_lock">Enable App Lock</string>
+    <string name="security_toggle_app_lock_desc">Require biometric or App PIN authentication on launch</string>
+    <string name="security_toggle_biometric">Biometric Unlock</string>
+    <string name="security_toggle_biometric_desc">Prompt fingerprint or face recognition automatically</string>
+    <string name="security_toggle_device_fallback">Device Credential Fallback</string>
+    <string name="security_toggle_device_fallback_desc">Allow Android PIN, pattern, or password if biometrics fail</string>
+    <string name="security_toggle_lock_bg">Lock on Background Return</string>
+    <string name="security_toggle_lock_bg_desc">Re-lock AH Mesh whenever returning from another app</string>
+    <string name="security_btn_change_pin">Change PIN</string>
+    <string name="security_btn_reset_pin">Reset PIN</string>
+    <string name="security_btn_set_pin">Set App PIN</string>
+    <string name="security_btn_lock_now">Lock App Now</string>
+    <string name="security_pin_setup_title">Set Local App PIN</string>
+    <string name="security_pin_change_title">Update Local App PIN</string>
+    <string name="security_pin_reset_title">Reset Local App PIN</string>
+    <string name="security_pin_reset_desc">Replace your local App PIN or clear it to disable App Lock.</string>
+    <string name="security_pin_clear_button">Clear PIN</string>
+    <string name="security_pin_verify_disable_title">Confirm Current PIN to Disable Lock</string>
+    <string name="security_pin_new_label">Enter 4 to 6 digit PIN</string>
+    <string name="security_pin_confirm_label">Confirm PIN</string>
+    <string name="security_pin_current_label">Current App PIN</string>
+    <string name="security_pin_error_length">PIN must be 4 to 6 digits.</string>
+    <string name="security_pin_error_mismatch">PIN entries do not match.</string>
+    <string name="security_pin_error_wrong_current">Current PIN is incorrect.</string>
+    <string name="security_pin_save">Save PIN &amp; Enable Lock</string>
+    <string name="security_pin_reset_save">Save New PIN</string>
+    <string name="security_pin_update">Update PIN</string>
+    <string name="security_pin_disable_confirm">Disable App Lock</string>
+    <string name="security_cancel">Cancel</string>
+
+    <!-- QR Device Pairing -->
+    <string name="cd_open_pairing">Open QR device pairing</string>
+    <string name="main_pair_device_cta">Pair P2P Device via QR</string>
+    <string name="main_pair_device_subtitle">Exchange local public keys offline using QR scan or code</string>
+    <string name="pairing_screen_title">Device Pairing</string>
+    <string name="cd_pairing_back">Navigate back</string>
+    <string name="pairing_peers_badge">%1$d trusted</string>
+    <string name="pairing_tab_my_qr">My QR Code</string>
+    <string name="pairing_tab_scan_qr">Scan Peer QR</string>
+    <string name="pairing_generator_title">Your Node Identity QR</string>
+    <string name="pairing_generator_subtitle">Let a nearby peer scan this QR to trust your device offline.</string>
+    <string name="pairing_cd_qr_code">QR code containing your AH Mesh node pairing payload</string>
+    <string name="pairing_display_name_label">Node Alias</string>
+    <string name="pairing_node_id_label">Node ID</string>
+    <string name="pairing_key_fingerprint_label">Key Fingerprint</string>
+    <string name="pairing_public_key_label">Public Key</string>
+    <string name="pairing_copy_to_clipboard">Copy to Clipboard</string>
+    <string name="pairing_cd_copy_public_key">Copy public key to clipboard</string>
+    <string name="pairing_copy_payload">Copy Pairing Code</string>
+    <string name="pairing_copied_toast">Pairing code copied to clipboard</string>
+    <string name="pairing_refresh_identity">Rotate Session</string>
+    <string name="pairing_scanner_title">Scan Peer QR Code</string>
+    <string name="pairing_scanner_subtitle">Point your camera at another AH Mesh node\'s QR card to pair.</string>
+    <string name="pairing_camera_permission_title">Camera Access Needed</string>
+    <string name="pairing_camera_permission_desc">Grant camera permission to scan peer QR codes directly offline.</string>
+    <string name="pairing_grant_camera_cta">Enable Camera</string>
+    <string name="pairing_camera_unavailable">Camera preview unavailable on this device. Paste a peer pairing code below instead.</string>
+    <string name="pairing_torch_on">Torch On</string>
+    <string name="pairing_torch_off">Torch Off</string>
+    <string name="pairing_scanner_guide_toggle">Guide</string>
+    <string name="pairing_scanner_guide_toggle_cd">Toggle QR alignment overlay guide</string>
+    <string name="pairing_scanner_overlay_align_hint">Align peer QR inside frame</string>
+    <string name="pairing_scanner_overlay_error_hint">Re-align QR &amp; hold steady</string>
+    <string name="pairing_scanner_overlay_distance_hint">15–25 cm • Match corner markers</string>
+    <string name="pairing_scanner_overlay_cd">QR scanner alignment viewfinder overlay</string>
+    <string name="pairing_scanner_guide_title">Handshake Alignment Guide</string>
+    <string name="pairing_scanner_guide_step_1">Center the peer QR inside the corner brackets.</string>
+    <string name="pairing_scanner_guide_step_2">Hold devices 15–25 cm apart in steady focus.</string>
+    <string name="pairing_scanner_guide_step_3">Tilt slightly to reduce screen glare or enable Torch.</string>
+    <string name="pairing_manual_divider">Or paste peer pairing code</string>
+    <string name="pairing_manual_input_label">ahmesh://pair code or JSON</string>
+    <string name="pairing_manual_submit">Pair Peer</string>
+    <string name="pairing_success_title">Peer Paired &amp; Trusted</string>
+    <string name="pairing_success_subtitle">%1$s (%2$s) added to your local mesh nodes.</string>
+    <string name="pairing_error_invalid_qr">Unrecognized QR code. Scan a valid AH Mesh pairing payload.</string>
+    <string name="pairing_error_self_qr">This is your own device QR code. Scan a different peer device.</string>
+    <string name="pairing_dismiss_feedback">Dismiss</string>
+    <string name="pairing_launch_zxing_scanner">Open ZXing Fullscreen Scanner</string>
+    <string name="pairing_zxing_prompt">Align another AH Mesh node QR code inside the frame</string>
+    <string name="pairing_trusted_peers_title">Paired Mesh Peers</string>
+    <string name="pairing_trusted_peers_empty">No paired peers yet. Scan a peer QR code or share yours to connect.</string>
+
+    <!-- Radar P2P Discovery Pulse -->
+    <string name="radar_searching_title">Scanning for P2P Nodes</string>
+    <string name="radar_searching_subtitle">Broadcasting offline discovery beacons via %1$s</string>
+    <string name="radar_peers_detected">%1$d nearby</string>
+    <string name="radar_stop_scan">Stop Scan</string>
+    <string name="cd_radar_pulse">Animated radar pulse scanning for nearby P2P devices</string>
+
+    <!-- Public Key Handshake & Troubleshooting -->
+    <string name="pairing_handshake_cta">Show Fullscreen Handshake QR</string>
+    <string name="pairing_handshake_dialog_title">Secure Handshake QR</string>
+    <string name="pairing_handshake_dialog_subtitle">Displaying encrypted public key payload for peer offline handshake.</string>
+    <string name="pairing_handshake_close">Close</string>
+    <string name="pairing_troubleshooting_title">Manual Key Exchange &amp; Troubleshooting</string>
+    <string name="pairing_troubleshooting_subtitle">Copy raw public key or view scanning tips for offline pairing.</string>
+    <string name="pairing_copy_public_key">Copy Public Key</string>
+    <string name="pairing_public_key_copied_toast">Public key copied to clipboard</string>
+    <string name="pairing_tip_1">1. Ensure both devices have Wi-Fi enabled (Wi-Fi connection is not required to be connected to a router, just powered on for Wi-Fi Direct).</string>
+    <string name="pairing_tip_2">2. Increase screen brightness if the scanning camera struggles to focus on the QR code.</string>
+    <string name="pairing_tip_3">3. If camera preview fails, paste the `AHMESH1:...` pairing payload string manually.</string>
+
+    <!-- Shareable QR Export, Retry Feedback & Scan History -->
+    <string name="pairing_export_qr_image">Export Shareable QR Image</string>
+    <string name="pairing_export_qr_chooser">Share Public Key QR Image</string>
+    <string name="pairing_export_qr_error">Unable to prepare QR image for sharing.</string>
+    <string name="pairing_save_to_gallery">Save to Gallery</string>
+    <string name="pairing_saved_to_gallery_label">Saved to Gallery</string>
+    <string name="pairing_save_gallery_success_toast">QR code image saved to Gallery</string>
+    <string name="pairing_save_gallery_error_toast">Unable to save QR code image to Gallery.</string>
+    <string name="pairing_cd_save_to_gallery">Save generated QR code image to gallery</string>
+    <string name="pairing_error_invalid_public_key">Invalid public key format detected. Ensure the peer QR contains a valid Base64 EC key.</string>
+    <string name="pairing_error_scan_failed">QR scan could not be completed. Hold steady and try again.</string>
+    <string name="pairing_retry_dialog_title">QR Scan Issue</string>
+    <string name="pairing_retry_dialog_cta">Retry Scan</string>
+    <string name="pairing_history_title">Scanned QR History</string>
+    <string name="pairing_history_empty">No QR scans recorded yet. Successfully scanned peer keys appear here with timestamps.</string>
+    <string name="pairing_history_clear">Clear</string>
+    <string name="pairing_history_cd_clear">Clear scanned QR history</string>
+
+    <!-- Biometric QR Protection -->
+    <string name="pairing_qr_locked_title">Public Key QR Protected</string>
+    <string name="pairing_qr_locked_subtitle">Verify with fingerprint, face, or device credential to reveal your public pairing key QR.</string>
+    <string name="pairing_unlock_qr_cta">Unlock with Biometrics</string>
+    <string name="pairing_lock_qr_cta">Lock QR</string>
+    <string name="pairing_biometric_prompt_title">Reveal Public Key QR</string>
+    <string name="pairing_biometric_prompt_subtitle">Confirm your fingerprint, face, or device lock to display your pairing key</string>
+    <string name="pairing_biometric_auth_canceled">Authentication canceled. Your public key QR stays hidden.</string>
+    <string name="pairing_biometric_auth_failed">Verification was not recognized. Try again.</string>
+    <string name="pairing_biometric_unavailable">Biometric or device screen lock is not set up on this device.</string>
+
+    <!-- Biometric Security Audit Log -->
+    <string name="pairing_audit_title">Biometric Security Audit</string>
+    <string name="pairing_audit_empty">No biometric unlock attempts recorded yet. Successful and failed attempts will appear here.</string>
+    <string name="pairing_audit_clear">Clear</string>
+    <string name="pairing_audit_cd_clear">Clear biometric security audit log</string>
+    <string name="pairing_audit_outcome_succeeded">Verified</string>
+    <string name="pairing_audit_outcome_failed">Failed Attempt</string>
+    <string name="pairing_audit_outcome_canceled">Canceled</string>
+    <string name="pairing_audit_outcome_error">Auth Error</string>
+    <string name="pairing_audit_summary_counts">%1$d passed • %2$d failed</string>
+
+    <!-- Audit Log Export Section -->
+    <string name="pairing_audit_export_title">Export Audit Log</string>
+    <string name="pairing_audit_export_subtitle">Export database authentication history as a CSV or plain text report for security review.</string>
+    <string name="pairing_audit_export_format_csv">CSV (.csv)</string>
+    <string name="pairing_audit_export_format_txt">Text (.txt)</string>
+    <string name="pairing_audit_export_ready_count">%1$d recorded events ready to export</string>
+    <string name="pairing_audit_export_empty_hint">Record at least one biometric attempt before exporting an audit file.</string>
+    <string name="pairing_audit_export_save">Save File</string>
+    <string name="pairing_audit_export_share">Share File</string>
+    <string name="pairing_audit_export_chooser">Share Biometric Security Audit</string>
+    <string name="pairing_audit_export_saved_toast">Saved %1$d audit records</string>
+    <string name="pairing_audit_export_error_toast">Unable to export biometric audit log.</string>
+
+    <!-- QR Scan Success/Failure Rate Statistic -->
+    <string name="pairing_qr_rate_title">QR Scan Success Rate</string>
+    <string name="pairing_qr_rate_no_scans">No QR scans recorded yet</string>
+    <string name="pairing_qr_rate_passed">%1$d passed</string>
+    <string name="pairing_qr_rate_failed">%1$d failed</string>
+    <string name="pairing_qr_rate_total">%1$d total</string>
+    <string name="pairing_qr_rate_cd">QR scan success rate: %1$d percent (%2$d passed, %3$d failed)</string>
+
+    <!-- Biometric Setup & Verification Modal -->
+    <string name="biometric_setup_modal_title">Biometric Credentials</string>
+    <string name="biometric_setup_modal_subtitle">Enroll fingerprint or face unlock, or verify your existing biometric credential for AH Mesh.</string>
+    <string name="biometric_setup_open_button">Enroll or Verify Biometrics</string>
+    <string name="biometric_setup_manage_button">Verify or Manage Biometrics</string>
+    <string name="biometric_setup_open_cd">Open biometric setup and verification</string>
+    <string name="biometric_setup_close_cd">Close biometric setup modal</string>
+    <string name="biometric_setup_status_enrolled_title">Biometrics Enrolled &amp; Ready</string>
+    <string name="biometric_setup_status_enrolled_desc">Your device has active biometric credentials. Verify below to confirm AH Mesh can authenticate you.</string>
+    <string name="biometric_setup_status_not_enrolled_title">Biometrics Not Set Up Yet</string>
+    <string name="biometric_setup_status_not_enrolled_desc">Biometric hardware is ready, but no fingerprint or face is enrolled on this device. Enroll in System Settings to enable biometric lock.</string>
+    <string name="biometric_setup_status_unavailable_title">Biometric Hardware Unavailable</string>
+    <string name="biometric_setup_status_unavailable_desc">Biometric authentication is not supported or temporarily unavailable on this device. You can still configure Android Screen Lock or an App PIN.</string>
+    <string name="biometric_setup_device_lock_label">Android Screen Lock</string>
+    <string name="biometric_setup_device_lock_active">Active</string>
+    <string name="biometric_setup_device_lock_missing">Not Set</string>
+    <string name="biometric_setup_steps_title">How to Set Up Biometrics</string>
+    <string name="biometric_setup_step_1">1. Ensure an Android screen lock (PIN, pattern, or password) is enabled.</string>
+    <string name="biometric_setup_step_2">2. Add your fingerprint or face in System Security Settings.</string>
+    <string name="biometric_setup_step_3">3. Return to AH Mesh and tap Verify Biometrics to confirm.</string>
+    <string name="biometric_setup_cta_enroll">Enroll in System Settings</string>
+    <string name="biometric_setup_cta_security_settings">Open System Security Settings</string>
+    <string name="biometric_setup_cta_manage_settings">Manage in System Settings</string>
+    <string name="biometric_setup_cta_verify">Verify Biometrics Now</string>
+    <string name="biometric_setup_cta_verify_device_lock">Verify Device Screen Lock</string>
+    <string name="biometric_setup_verify_prompt_title">Verify Biometric Credential</string>
+    <string name="biometric_setup_verify_prompt_subtitle">Confirm your fingerprint or face for AH Mesh</string>
+    <string name="biometric_setup_result_verified">Biometric credential verified. AH Mesh biometric unlock is ready to use.</string>
+    <string name="biometric_setup_result_device_verified">Device screen lock verified as a fallback credential.</string>
+    <string name="biometric_setup_result_failed">Verification attempt was not recognized. Try again.</string>
+    <string name="biometric_setup_result_canceled">Verification canceled before completion.</string>
+    <string name="biometric_setup_result_settings_error">Unable to open Android Security Settings automatically on this device.</string>
+    <string name="biometric_setup_settings_banner_title">Set Up Biometric Unlock</string>
+    <string name="biometric_setup_settings_banner_desc">Enroll a fingerprint or face in Android Settings to protect app launch and your public key QR.</string>
+    <string name="biometric_setup_done">Done</string>
+
+    <!-- Recent Successful QR Scans Tab & List -->
+    <string name="pairing_tab_history">Scan History</string>
+    <string name="pairing_history_subtitle">Recent successful QR code pairings retrieved from local Room storage.</string>
+    <string name="pairing_history_count_badge">%1$d scans</string>
+    <string name="pairing_history_date_cd">Scan date</string>
+    <string name="pairing_history_time_cd">Scan time</string>
+    <string name="pairing_history_verified_badge">Verified</string>
+
+    <!-- Biometric Authentication Events Table -->
+    <string name="pairing_events_table_title">Recent Biometric Events</string>
+    <string name="pairing_events_table_subtitle">Structured table showing timestamp, result, and event type for each attempt.</string>
+    <string name="pairing_events_table_count">%1$d events</string>
+    <string name="pairing_events_table_col_timestamp">Timestamp</string>
+    <string name="pairing_events_table_col_result">Result</string>
+    <string name="pairing_events_table_col_event_type">Event Type</string>
+    <string name="pairing_events_table_empty">No biometric authentication events recorded yet.</string>
+    <string name="pairing_event_type_qr_biometric">QR Key Biometric</string>
+    <string name="pairing_event_type_qr_device">QR Key Device Lock</string>
+    <string name="pairing_event_type_biometric_or_device">QR Vault Auth</string>
+    <string name="pairing_event_type_setup_verify">Credential Verify</string>
+    <string name="pairing_event_type_handshake">Handshake Auth</string>
+
+    <!-- Global Theme Appearance Settings -->
+    <string name="settings_appearance_title">Appearance</string>
+    <string name="settings_toggle_dark_mode">Dark Mode</string>
+    <string name="settings_toggle_dark_mode_on_desc">Dark metallic theme active across all screens</string>
+    <string name="settings_toggle_dark_mode_off_desc">Bright light theme active across all screens</string>
+
+    <!-- QR Scan Statistics Table -->
+    <string name="pairing_qr_stats_table_title">QR Scan Statistics Table</string>
+    <string name="pairing_qr_stats_table_subtitle">Structured breakdown of scan outcomes, success rates, and failure distribution.</string>
+    <string name="pairing_qr_stats_table_metric">Scan Outcome</string>
+    <string name="pairing_qr_stats_table_count">Count</string>
+    <string name="pairing_qr_stats_table_rate">Rate %</string>
+    <string name="pairing_qr_stats_row_total">Total Scans</string>
+    <string name="pairing_qr_stats_row_successful">Successful Scans</string>
+    <string name="pairing_qr_stats_row_failed">Failed Scans</string>
+    <string name="pairing_qr_stats_empty">No QR scan attempts recorded yet.</string>
+
+    <!-- Handshake Biometric Authentication Prompt -->
+    <string name="pairing_handshake_biometric_title">Authenticate Handshake</string>
+    <string name="pairing_handshake_biometric_subtitle">Confirm your biometric credentials to display the cryptographic handshake QR key.</string>
+
+    <!-- P2P Mesh AI Assistant -->
+    <string name="assistant_screen_title">P2P Mesh Assistant</string>
+    <string name="assistant_welcome_title">AH Mesh AI Assistant</string>
+    <string name="assistant_welcome_subtitle">Powered by Gemini. Ask about P2P mesh network status, Wi-Fi Direct, offline handshake, or connection troubleshooting.</string>
+    <string name="assistant_prompt_placeholder">Ask about P2P network, pairing, or mesh...</string>
+    <string name="assistant_chip_network_status">P2P Network Status</string>
+    <string name="assistant_chip_pairing_help">How do I pair offline?</string>
+    <string name="assistant_chip_troubleshoot">Troubleshoot mesh connection</string>
+    <string name="assistant_chip_wifi_direct">Wi-Fi Direct vs Local LAN</string>
+    <string name="assistant_send">Send</string>
+    <string name="assistant_empty_prompt">Please enter a question or topic.</string>
+    <string name="assistant_streaming">Thinking...</string>
+    <string name="assistant_clear_chat">Clear Chat</string>
+    <string name="assistant_topbar_button_cd">Open P2P Mesh AI Assistant</string>
+    <string name="assistant_network_context_header">Live P2P Network Context</string>
+
+    <!-- Biometric Authentication Analytics Screen -->
+    <string name="pairing_biometric_stats_topbar_cd">Open biometric analytics bar chart</string>
+    <string name="pairing_view_biometric_chart">View Bar Chart</string>
+    <string name="settings_biometric_analytics_cta">Biometric Auth Analytics</string>
+    <string name="biometric_stats_screen_title">Biometric Analytics</string>
+    <string name="biometric_stats_screen_subtitle">Room Audit Log Telemetry</string>
+    <string name="biometric_stats_back_cd">Navigate back from biometric analytics</string>
+    <string name="biometric_stats_clear_cd">Clear biometric audit logs</string>
+    <string name="biometric_stats_clear_dialog_title">Clear Biometric Logs?</string>
+    <string name="biometric_stats_clear_dialog_body">This removes all recorded biometric success and failure events from your local Room database.</string>
+    <string name="biometric_stats_clear_confirm">Clear Logs</string>
+    <string name="biometric_stats_kpi_total">Total Logs</string>
+    <string name="biometric_stats_kpi_success_rate">Success Rate</string>
+    <string name="biometric_stats_kpi_failure_rate">Failure Rate</string>
+    <string name="biometric_stats_chart_title">Success vs Failure Rates</string>
+    <string name="biometric_stats_chart_subtitle">Aggregated across all Room biometric audit entries</string>
+    <string name="biometric_stats_mode_rate">Rate (%)</string>
+    <string name="biometric_stats_mode_count">Count (#)</string>
+    <string name="biometric_stats_bar_success">Success</string>
+    <string name="biometric_stats_bar_failure">Failure</string>
+    <string name="biometric_stats_bar_verified">Verified</string>
+    <string name="biometric_stats_bar_failed">Failed</string>
+    <string name="biometric_stats_bar_canceled">Canceled</string>
+    <string name="biometric_stats_bar_error">Error</string>
+    <string name="biometric_stats_tooltip_attempts">%1$d of %2$d attempts (%3$d%%)</string>
+    <string name="biometric_stats_tooltip_failure_detail">%1$d failed • %2$d canceled • %3$d error</string>
+    <string name="biometric_stats_outcome_title">Outcome Distribution</string>
+    <string name="biometric_stats_outcome_subtitle">Breakdown of verified, failed, canceled, and hardware error events</string>
+    <string name="biometric_stats_method_title">Rate by Auth Trigger</string>
+    <string name="biometric_stats_method_subtitle">Success vs failure distribution per biometric entry point</string>
+    <string name="biometric_stats_method_counts">%1$d passed • %2$d failed</string>
+    <string name="biometric_stats_empty_title">No Biometric Logs Recorded</string>
+    <string name="biometric_stats_empty_subtitle">Unlock the Pairing QR vault, authorize a handshake, or run Credential Verify to record biometric success and failure metrics into Room.</string>
+    <string name="biometric_stats_chart_cd">Bar chart comparing biometric authentication success and failure rates</string>
+
+    <!-- Launcher App Shortcuts -->
+    <string name="shortcut_qr_scanner_short">Scan QR</string>
+    <string name="shortcut_qr_scanner_long">Open QR Scanner</string>
+    <string name="shortcut_assistant_short">AI Assistant</string>
+    <string name="shortcut_assistant_long">Open P2P Assistant</string>
+    <string name="shortcut_disabled_message">Shortcut unavailable</string>
+
+    <!-- Wi-Fi Direct Discovery & Session UI -->
+    <string name="wifi_direct_session_title">Wi-Fi Direct Link</string>
+    <string name="wifi_direct_role_owner">Group Owner (Host)</string>
+    <string name="wifi_direct_role_client">Group Client</string>
+    <string name="wifi_direct_owner_ip">Host IP: %1$s</string>
+    <string name="wifi_direct_peer_ip">Peer IP: %1$s</string>
+    <string name="wifi_direct_peer_ip_pending">Peer IP: awaiting client socket</string>
+    <string name="wifi_direct_server_listening">Socket Server Listening :%1$d</string>
+    <string name="wifi_direct_server_standby">Socket Server Standby</string>
+    <string name="wifi_direct_disconnect">Disconnect</string>
+    <string name="wifi_direct_open_transfer">Open Transfer Hub</string>
+    <string name="wifi_direct_nearby_title">Nearby Wi-Fi Direct Peers</string>
+    <string name="wifi_direct_connect">Connect</string>
+    <string name="wifi_direct_connecting">Invited…</string>
+    <string name="wifi_direct_connected_chip">Linked</string>
+    <string name="wifi_direct_status_available">Available</string>
+    <string name="wifi_direct_status_invited">Invited</string>
+    <string name="wifi_direct_status_connected">Connected</string>
+    <string name="wifi_direct_status_failed">Failed</string>
+    <string name="wifi_direct_status_unavailable">Unavailable</string>
+    <string name="wifi_direct_transfer_cta_title">P2P Chat, Files &amp; APK Transfer</string>
+    <string name="wifi_direct_transfer_cta_subtitle">Stream messages, documents, media, and installed app APKs directly over TCP sockets</string>
+    <string name="cd_open_transfer_hub">Open P2P Transfer Hub</string>
+
+    <!-- Transfer Hub Screen -->
+    <string name="transfer_screen_title">P2P Transfer Hub</string>
+    <string name="cd_transfer_back">Back from P2P Transfer Hub</string>
+    <string name="transfer_target_host_label">Target Peer IP Address</string>
+    <string name="transfer_target_host_hint">Auto-filled on Wi-Fi Direct link or enter LAN IP</string>
+    <string name="transfer_port_badge">TCP :%1$d</string>
+    <string name="transfer_storage_folder_hint">Incoming files &amp; APKs saved to: %1$s</string>
+    <string name="transfer_size_limit_title">File Size Warning Limit</string>
+    <string name="transfer_size_limit_value">%1$d MB</string>
+    <string name="transfer_message_input_hint">Write encrypted-link P2P message…</string>
+    <string name="transfer_send_message_cd">Send text message</string>
+    <string name="transfer_pick_file_button">Send File</string>
+    <string name="transfer_pick_apk_button">Send App APK</string>
+    <string name="transfer_active_section_title">Live Transfers</string>
+    <string name="transfer_clear_completed">Clear Done</string>
+    <string name="transfer_direction_outgoing">Sending</string>
+    <string name="transfer_direction_incoming">Receiving</string>
+    <string name="transfer_status_queued">Queued</string>
+    <string name="transfer_status_transferring">Transferring • %1$d%%</string>
+    <string name="transfer_status_completed">Saved • %1$s</string>
+    <string name="transfer_status_failed">Failed: %1$s</string>
+    <string name="transfer_messages_empty_title">Ready for Direct P2P Transfer</string>
+    <string name="transfer_messages_empty_subtitle">Connect a nearby peer via Wi-Fi Direct or enter a peer LAN IP, then send messages, files, or installed app APKs.</string>
+    <string name="transfer_msg_status_sending">Sending…</string>
+    <string name="transfer_msg_status_delivered">Delivered</string>
+    <string name="transfer_msg_status_failed">Failed</string>
+    <string name="transfer_size_warning_title">Large File Size Warning</string>
+    <string name="transfer_size_warning_body">\"%1$s\" is %2$s, which exceeds your configured %3$s limit. Transferring large files over Wi-Fi Direct may take longer. Proceed anyway?</string>
+    <string name="transfer_size_warning_confirm">Send Anyway</string>
+    <string name="transfer_size_warning_cancel">Cancel</string>
+    <string name="transfer_apk_picker_title">Share Installed App (APK)</string>
+    <string name="transfer_apk_search_hint">Search installed apps…</string>
+    <string name="transfer_apk_loading">Scanning installed app APKs…</string>
+    <string name="transfer_apk_empty">No shareable launcher apps found.</string>
+    <string name="transfer_apk_send_action">Send APK</string>
+    <string name="transfer_apk_close">Close</string>
+
+    <!-- Network Telemetry & Traffic Visualization -->
+    <string name="network_telemetry_open_button">Traffic &amp; Stability</string>
+    <string name="network_telemetry_cd_open">Open network traffic and stability charts</string>
+    <string name="telemetry_screen_title">Network Telemetry</string>
+    <string name="telemetry_screen_subtitle">Live P2P Traffic &amp; Link Stability</string>
+    <string name="telemetry_back_cd">Back from network telemetry</string>
+    <string name="telemetry_probe_cd">Record live telemetry probe</string>
+    <string name="telemetry_clear_cd">Clear telemetry history</string>
+    <string name="telemetry_clear_dialog_title">Clear Telemetry History?</string>
+    <string name="telemetry_clear_dialog_body">This deletes all stored P2P stability snapshots from your local Room database.</string>
+    <string name="telemetry_clear_confirm">Clear History</string>
+    <string name="telemetry_range_15m">15m</string>
+    <string name="telemetry_range_1h">1h</string>
+    <string name="telemetry_range_24h">24h</string>
+    <string name="telemetry_range_all">All</string>
+    <string name="telemetry_kpi_stability">Avg Stability</string>
+    <string name="telemetry_kpi_traffic">P2P Traffic</string>
+    <string name="telemetry_kpi_peak_peers">Peak Peers</string>
+    <string name="telemetry_stability_title">Connection Stability Over Time</string>
+    <string name="telemetry_stability_subtitle">Link health score (0–100%) and peer link timeline</string>
+    <string name="telemetry_stability_chart_cd">Area chart showing P2P connection stability percentage over time</string>
+    <string name="telemetry_stability_empty">No connection samples in this window yet. Tap Refresh Probe to log the current P2P link state.</string>
+    <string name="telemetry_stability_tooltip_detail">%1$d%% stability • %2$d linked • %3$d nearby</string>
+    <string name="telemetry_traffic_title">P2P Network Traffic Patterns</string>
+    <string name="telemetry_traffic_subtitle">Outgoing vs incoming socket payloads over time</string>
+    <string name="telemetry_traffic_chart_cd">Grouped bar chart comparing outgoing and incoming P2P network traffic over time</string>
+    <string name="telemetry_metric_volume">Volume (KB)</string>
+    <string name="telemetry_metric_transfers">Packets (#)</string>
+    <string name="telemetry_legend_outgoing">Outgoing</string>
+    <string name="telemetry_legend_incoming">Incoming</string>
+    <string name="telemetry_legend_delivered">Delivered</string>
+    <string name="telemetry_legend_failed">Failed</string>
+    <string name="telemetry_traffic_tooltip">%1$s: Out %2$s • In %3$s (%4$d transfers)</string>
+    <string name="telemetry_mix_text">Text: %1$d</string>
+    <string name="telemetry_mix_files">Files: %1$d</string>
+    <string name="telemetry_mix_apks">APKs: %1$d</string>
+    <string name="telemetry_transport_title">Transport Mode Stability Mix</string>
+    <string name="telemetry_transport_subtitle">Observed distribution across Wi-Fi Direct, Local LAN, and Standby</string>
+    <string name="telemetry_samples_count">%1$d samples</string>
+    <string name="live_metrics_open_button">Live Line Chart</string>
+    <string name="live_metrics_open_cd">Open real-time P2P line chart monitor</string>
+    <string name="live_metrics_screen_title">Live P2P Monitor</string>
+    <string name="live_metrics_screen_subtitle">Real-time traffic &amp; link stability stream</string>
+    <string name="live_metrics_back_cd">Back from live P2P monitor</string>
+    <string name="live_metrics_badge_live">LIVE</string>
+    <string name="live_metrics_badge_paused">PAUSED</string>
+    <string name="live_metrics_toggle_cd">Pause or resume live metrics stream</string>
+    <string name="live_metrics_clear_cd">Clear live metrics buffer</string>
+    <string name="live_window_30s">30s Window</string>
+    <string name="live_window_60s">60s Window</string>
+    <string name="live_window_2m">2m Window</string>
+    <string name="live_kpi_stability">Stability</string>
+    <string name="live_kpi_throughput">Traffic/Tick</string>
+    <string name="live_kpi_links">Linked/Found</string>
+    <string name="live_metrics_chart_title">Real-Time Traffic &amp; Stability</string>
+    <string name="live_metrics_chart_subtitle">Dual-axis D3 stream: % link health (left) vs KB throughput (right)</string>
+    <string name="live_metrics_chart_cd">Real-time multi-series line chart showing connection stability percentage and outgoing/incoming P2P traffic</string>
+    <string name="live_series_stability">Stability (%)</string>
+    <string name="live_series_outgoing">Out (KB)</string>
+    <string name="live_series_incoming">In (KB)</string>
+    <string name="live_metrics_empty_stream">Collecting initial live telemetry points…</string>
+    <string name="live_metrics_resume_live_tail">Live Tail</string>
+    <string name="live_metrics_hud_detail">Stability %1$d%% • Out %2$s • In %3$s • %4$d linked</string>
+    <string name="live_ticks_title">Recent Stream Ticks</string>
+    <string name="live_ticks_empty">Waiting for live P2P telemetry samples.</string>
+    <string name="live_ticks_row_detail">Out %1$s • In %2$s • %3$s</string>
+
+    <!-- Live P2P Summary & End-to-End Transfer Actions -->
+    <string name="main_live_card_title_connected">Mesh Link Active</string>
+    <string name="main_live_card_title_discovering">Scanning Nearby Peers</string>
+    <string name="main_live_card_title_ready">Offline P2P Ready</string>
+    <string name="main_live_card_title_permission">Nearby Permission Needed</string>
+    <string name="main_live_card_title_offline">Local Radio Offline</string>
+    <string name="main_live_card_desc_connected">Direct encrypted-link TCP socket active across %1$s.</string>
+    <string name="main_live_card_desc_discovering">Broadcasting offline discovery beacons via %1$s.</string>
+    <string name="main_live_card_desc_ready">Socket listener ready on %1$s. Pair via QR or connect a nearby node.</string>
+    <string name="main_live_card_desc_permission">Grant nearby Wi-Fi permission to discover peers automatically, or enter a LAN IP in Transfer Hub.</string>
+    <string name="main_live_card_desc_offline">Turn on Wi-Fi for Wi-Fi Direct discovery or use local hotspot/LAN in Transfer Hub.</string>
+    <string name="main_live_metric_transport">Transport: %1$s</string>
+    <string name="main_live_metric_peers">%1$d linked • %2$d nearby</string>
+    <string name="main_live_metric_socket_up">TCP :%1$d Listening</string>
+    <string name="main_live_metric_socket_down">TCP Standby</string>
+    <string name="main_live_recent_transfer">Recent Transfer: %1$s (%2$d%%)</string>
+    <string name="main_live_recent_message">Latest Message: %1$s</string>
+    <string name="main_live_recent_pairing">Last Paired Peer: %1$s (%2$s)</string>
+    <string name="main_live_no_recent_activity">No transfers or QR handshakes yet — ready for local P2P.</string>
+    <string name="main_live_action_pair">Pair QR</string>
+    <string name="main_live_action_transfer">Transfer Hub</string>
+    <string name="pairing_open_peer_transfer">Chat &amp; Send</string>
+    <string name="pairing_cd_open_peer_transfer">Open P2P chat and file transfer with %1$s</string>
+    <string name="transfer_cd_refresh_link">Refresh Wi-Fi Direct host and socket link</string>
+    <string name="transfer_open_file_action">Tap to Open</string>
+    <string name="transfer_open_apk_action">Tap to Open APK</string>
+    <string name="transfer_open_error_toast">No viewer available to open %1$s.</string>
+</resources>

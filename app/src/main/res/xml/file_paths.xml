@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <cache-path name="shared_cache" path="shared/" />
+    <files-path name="shared_files" path="shared/" />
+    <files-path name="ah_mesh_files" path="AH Mesh/" />
+    <external-cache-path name="ext_cache" path="shared/" />
+    <external-files-path name="ah_mesh_external_downloads" path="Download/AH Mesh/" />
+    <external-files-path name="ah_mesh_external" path="AH Mesh/" />
+</paths>

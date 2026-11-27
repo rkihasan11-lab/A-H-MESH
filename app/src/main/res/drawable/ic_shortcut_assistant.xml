@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Circular dark purple badge -->
+    <path
+        android:fillColor="#3B1261"
+        android:pathData="M24,2A22,22 0 1,1 2,24A22,22 0 0,1 24,2Z" />
+    <!-- Subtle outer ring -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M24,3.5A20.5,20.5 0 1,1 3.5,24A20.5,20.5 0 0,1 24,3.5Z"
+        android:strokeWidth="1.5"
+        android:strokeColor="#A855F7" />
+    <!-- Primary AI sparkle star -->
+    <path
+        android:fillColor="#E9D5FF"
+        android:pathData="M22,12L24.5,19.5L32,22L24.5,24.5L22,32L19.5,24.5L12,22L19.5,19.5Z" />
+    <!-- Secondary accent sparkle -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M31.5,26.5L32.8,30.2L36.5,31.5L32.8,32.8L31.5,36.5L30.2,32.8L26.5,31.5L30.2,30.2Z" />
+</vector>
