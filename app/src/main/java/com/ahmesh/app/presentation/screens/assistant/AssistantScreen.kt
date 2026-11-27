@@ -91,7 +91,7 @@ fun AssistantScreen(
     AssistantScreenContent(
         uiState = uiState,
         onNavigateBack = onNavigateBack,
-        onInputDraftChange = viewModel::onInputDraftChange,
+        onInputDraftChange = viewModel::updateDraft,
         onSendPrompt = viewModel::sendPrompt,
         onClearChat = viewModel::clearChat,
         modifier = modifier
